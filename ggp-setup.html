@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>계약 · 시스템 셋업 — NAVER GGP 파트너 온보딩</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%2303C75A%27/%3E%3Ctext x=%2716%27 y=%2723%27 font-size=%2720%27 font-weight=%27700%27 text-anchor=%27middle%27 fill=%27white%27 font-family=%27Arial%27%3EN%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo">
+    <span class="logo-mark">N</span>
+    <span class="logo-text">NAVER GGP 파트너 온보딩</span>
+  </a>
+  <ul class="nav-menu">
+    <li class="nav-item">
+      <span class="nav-link active">GGP 시작하기 <span class="arrow">▾</span></span>
+      <div class="dropdown">
+        <a href="ggp-overview.html">GGP 프로그램 이해하기</a>
+        <a href="ggp-setup.html">계약 · 시스템 셋업</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <span class="nav-link">광고주 온보딩 <span class="arrow">▾</span></span>
+      <div class="dropdown">
+        <a href="advertiser-account.html">해외 광고주 계정 개설</a>
+        <a href="advertiser-security.html">글로벌 광고주 보안 실사(DDQ)</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <span class="nav-link">정산 · 결제 <span class="arrow">▾</span></span>
+      <div class="dropdown">
+        <a href="billing-structure.html">광고비 결제 · 세금 구조</a>
+        <a href="ggp-settlement.html">GGP 월 정산 · 인센티브</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <span class="nav-link">상품 · 운영 <span class="arrow">▾</span></span>
+      <div class="dropdown">
+        <a href="nosp-booking.html">NOSP · 보장형 상품 부킹</a>
+        <a href="policy-brand.html">소재 심의 · 브랜드 가이드</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <span class="nav-link">업종별 가이드 <span class="arrow">▾</span></span>
+      <div class="dropdown">
+        <a href="vertical-game.html">게임</a>
+        <a href="vertical-commerce.html">커머스 · 뷰티</a>
+        <a href="vertical-travel.html">여행 · 호텔</a>
+        <a href="vertical-shortdrama.html">숏드라마</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <span class="nav-link">FAQ · 템플릿 <span class="arrow">▾</span></span>
+      <div class="dropdown">
+        <a href="faq.html">자주 묻는 질문</a>
+        <a href="templates.html">메일 템플릿</a>
+      </div>
+    </li>
+    <li class="nav-item lang-switcher">
+      <span class="nav-link">🌐 <span class="arrow">▾</span></span>
+      <div class="dropdown">
+        <a href="index.html" class="lang-active">한국어</a>
+        <a class="coming-soon">English</a>
+        <a class="coming-soon">中文</a>
+      </div>
+    </li>
+  </ul>
+  <div class="nav-toggle" aria-label="메뉴 열기"><span></span><span></span><span></span></div>
+</nav>
+
+<header class="page-header">
+  <div class="badge">GGP 시작하기</div>
+  <h1>계약 · 시스템 셋업</h1>
+  <p>GGP·파일럿 파트너로 선정된 뒤 운영을 시작하기까지 필요한 계약 체결, 전자서명, 참여 확인서, 접속 환경(IP) 및 시스템 계정 셋업 절차입니다.</p>
+</header>
+
+<div class="content-wrap">
+  <aside class="toc">
+    <h3>목차</h3>
+    <ul>
+      <li><a href="#s1">SECTION 1. 온보딩 체크리스트</a></li>
+      <li><a href="#s2">SECTION 2. 계약 체결</a></li>
+      <li><a href="#s3">SECTION 3. 파일럿 참여 확인서</a></li>
+      <li><a href="#s4">SECTION 4. 접속 환경 · IP 등록</a></li>
+      <li><a href="#s5">SECTION 5. NOSP · API 권한</a></li>
+    </ul>
+  </aside>
+
+  <main class="main-content">
+    <section class="section" id="s1">
+      <h2 class="section-title">
+        <span class="section-num">1</span>
+        온보딩 체크리스트
+      </h2>
+        <div class="step-flow" style="flex-wrap:wrap;gap:8px;">
+          <div class="step-flow-item"><span class="step-num">STEP 1</span>계약서 검토<br /><small>통합 계약서 + 부속서류</small></div>
+          <div class="step-flow-arrow">→</div>
+          <div class="step-flow-item"><span class="step-num">STEP 2</span>PATH 전자서명</div>
+          <div class="step-flow-arrow">→</div>
+          <div class="step-flow-item"><span class="step-num">STEP 3</span>접속 IP 등록<br /><small>사업장 고정 IP</small></div>
+          <div class="step-flow-arrow">→</div>
+          <div class="step-flow-item"><span class="step-num">STEP 4</span>NOSP 가입 · API 권한</div>
+          <div class="step-flow-arrow">→</div>
+          <div class="step-flow-item"><span class="step-num">STEP 5</span>운영 시작<br /><small>월간 사이클 진입</small></div>
+        </div>
+    </section>
+    <hr class="divider" />
+    <section class="section" id="s2">
+      <h2 class="section-title">
+        <span class="section-num">2</span>
+        계약 체결
+      </h2>
+      <div class="subsection">
+        <h3 class="subsection-title">계약서 구성</h3>
+      <p>2026년 7월 1일부로 모든 파트너사 계약은 <strong>「네이버 광고 파트너사 통합 계약서」</strong>로 일원화되었습니다. 해외 파트너사·파일럿 파트너사도 통합 계약서를 사용합니다.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>No.</th><th>부속 서류</th><th>비고</th></tr></thead>
+            <tbody>
+            <tr><td>1</td><td>파트너사 수수료 부속합의서</td><td>수수료율·지급 기준</td></tr>
+            <tr><td>2</td><td>광고 파트너사 SLA</td><td>서비스 수준 합의</td></tr>
+            <tr><td>3</td><td>공정경쟁 협약서</td><td></td></tr>
+            <tr><td>4</td><td>윤리실천 협약서</td><td></td></tr>
+            <tr><td>5</td><td>개인정보의 처리와 보호에 관한 합의서 (제3자 제공)</td><td>광고주 정보 처리 관련</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="info-box">💡 후불 결제, 신용카드 검수 등은 통합 계약서상 <strong>별도 이메일 합의</strong>가 있어야만 효력이 생깁니다. 해외 파일럿에는 후불·보장형 부속합의서가 적용되지 않습니다.</div>
+      </div>
+      <div class="subsection">
+        <h3 class="subsection-title">PATH 전자서명</h3>
+        <ul class="bullet-list">
+          <li>계약은 종이·실인 교환 없이 <strong>PATH 전자계약 시스템</strong>으로 체결합니다 (해외 파트너사 동일).</li>
+          <li>PATH는 영문 · 중문(간체/번체)을 지원합니다.</li>
+          <li>네이버 내부 결재가 끝나면 서명 요청 메일이 발송되며, 수신 메일에서 바로 서명할 수 있습니다.</li>
+          <li>PATH 계정·로그인 등 시스템 이슈: <a href="mailto:partner_system@navercorp.com">partner_system@navercorp.com</a></li>
+        </ul>
+      </div>
+    </section>
+    <hr class="divider" />
+    <section class="section" id="s3">
+      <h2 class="section-title">
+        <span class="section-num">3</span>
+        파일럿 참여 확인서
+      </h2>
+      <p>해외 파일럿 파트너사가 자국 광고주와의 계약을 위해 네이버 파트너 참여 사실 증빙이 필요한 경우, 영문 <strong>Confirmation Letter(파일럿 참여 확인서)</strong>를 발급받을 수 있습니다.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>요청 시 전달할 정보</th><th>설명</th></tr></thead>
+            <tbody>
+            <tr><td>Full legal entity name</td><td>확인서에 기재될 법인 정식 명칭 (예: ○○ Co., Limited)</td></tr>
+            <tr><td>필요 유효기간</td><td>분기 / 반기 / 연간 단위로 요청 (현재 최대 2026-12-31까지)</td></tr>
+            <tr><td>용도</td><td>광고주 계약 증빙 등 사용 목적</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="warning-box">⚠️ 확인서는 <strong>파일럿 참여 사실만</strong> 확인하는 문서이며, 공식 대행사 인증·독점 권한 부여를 의미하지 않습니다. 광고주에게 ‘네이버 공식 대행사’로 소개하지 않도록 주의해 주세요.</div>
+      <div class="subsection">
+        <h3 class="subsection-title">파일럿 → 공식 파트너 전환</h3>
+      <p>해외 대행사 파일럿은 보통 3~6개월 테스트로 운영되며, 기간 내 목표(매출·조건)를 달성하면 공식 파트너사 전환을 심사합니다. 전환 전까지는 광고주에게 ‘파일럿 프로그램 참여사’임을 명확히 커뮤니케이션해야 합니다.</p>
+      </div>
+    </section>
+    <hr class="divider" />
+    <section class="section" id="s4">
+      <h2 class="section-title">
+        <span class="section-num">4</span>
+        접속 환경 · IP 등록
+      </h2>
+      <p>해외에서 VPN·해외 IP로 네이버 광고 계정에 접속하면 ‘비정상 로그인’으로 판단되어 접속이 차단되는 경우가 있습니다. 운영 중 차단을 줄이려면 <strong>파트너사 사업장 고정 IP</strong>를 등록하세요.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>구분</th><th>인정 여부</th></tr></thead>
+            <tbody>
+            <tr><td>현지 통신사(ISP)가 발급한 사업장 IP 확인서 (예: China Telecom, China Unicom 등)</td><td>✅ 인정</td></tr>
+            <tr><td>클라우드 · 서버 · 호스팅 IP 증명서 (예: 클라우드 서비스 IP)</td><td>❌ 불인정</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="info-box">💡 사업장 IP 확인서는 담당 AM에게 전달해 주세요.</div>
+    </section>
+    <hr class="divider" />
+    <section class="section" id="s5">
+      <h2 class="section-title">
+        <span class="section-num">5</span>
+        NOSP · API 권한
+      </h2>
+        <ul class="bullet-list">
+          <li>보장형 DA(NOSP) 상품을 판매하려면 NOSP 회원가입과 소속회사 등록이 필요합니다. → <a href="nosp-booking.html">NOSP · 보장형 상품 부킹</a></li>
+          <li>네이버 광고 API 권한은 원칙적으로 공식 대행사에 한해 발급하지만, 파일럿 기간 지원을 위해 예외 발급될 수 있습니다. 필요 시 담당 AM에게 요청하세요.</li>
+          <li>API 활용 가이드: <a href="https://naver-ad-api.github.io/developers/en/docs/intro" target="_blank">naver-ad-api.github.io/developers</a> · <a href="https://naver.github.io/searchad-apidoc" target="_blank">검색광고 API 문서</a></li>
+        </ul>
+    </section>
+  </main>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      GGP 문의: <a href="mailto:dl_adpartner_global@navercorp.com">dl_adpartner_global@navercorp.com</a>
+      &nbsp;|&nbsp;
+      GGP 소개: <a href="https://ads.naver.com/sub/ggp/en" target="_blank">ads.naver.com/sub/ggp</a>
+      &nbsp;|&nbsp;
+      파트너사 문의 채널 안내: <a href="https://notice.naver.com/notices/ads/32230" target="_blank">공지 32230</a>
+    </div>
+    <div class="footer-note">본 가이드는 2026년 10월 기준 운영 내용입니다. 정책·조건은 네이버 내부 사정에 따라 변경될 수 있으며, 최종 기준은 담당 AM 안내를 따릅니다.</div>
+  </div>
+</footer>
+
+<script src="search-index.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
