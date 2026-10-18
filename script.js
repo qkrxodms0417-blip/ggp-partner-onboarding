@@ -144,6 +144,7 @@ function initSearch() {
       { url: 'faq.html', tag: 'FAQ · 자료', tagClass: 'faq', title: '자주 묻는 질문', type: 'guide' },
       { url: 'templates.html', tag: 'FAQ · 자료', tagClass: 'faq', title: '메일 템플릿', type: 'guide' },
       { url: 'resources.html', tag: 'FAQ · 자료', tagClass: 'faq', title: '영문 소개서 · 가이드 PDF', type: 'guide' },
+      { url: 'glossary.html', tag: 'FAQ · 자료', tagClass: 'faq', title: '용어 풀이', type: 'guide' },
     ],
     en: [
       { url: 'powerlink-understanding-en.html',  tag: 'Powerlink',           tagClass: 'powerlink', title: 'Powerlink Overview',          type: 'overview' },
