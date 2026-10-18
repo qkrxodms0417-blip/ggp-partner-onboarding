@@ -129,20 +129,21 @@ function initSearch() {
   /* --- page sets per language --- */
   const PAGE_SETS = {
     ko: [
+      { url: 'kickoff.html', tag: 'GGP 시작하기', tagClass: 'ggp', title: '킥오프 전 필수 준비', type: 'guide' },
       { url: 'ggp-overview.html', tag: 'GGP 시작하기', tagClass: 'ggp', title: 'GGP 프로그램 이해하기', type: 'guide' },
       { url: 'ggp-setup.html', tag: 'GGP 시작하기', tagClass: 'ggp', title: '계약 · 시스템 셋업', type: 'guide' },
       { url: 'advertiser-account.html', tag: '광고주 온보딩', tagClass: 'onboard', title: '해외 광고주 계정 개설', type: 'guide' },
       { url: 'advertiser-security.html', tag: '광고주 온보딩', tagClass: 'onboard', title: '글로벌 광고주 보안 실사(DDQ)', type: 'guide' },
       { url: 'billing-structure.html', tag: '정산 · 결제', tagClass: 'billing', title: '광고비 결제 · 세금 구조', type: 'guide' },
-      { url: 'ggp-settlement.html', tag: '정산 · 결제', tagClass: 'billing', title: 'GGP 월 정산 · 인센티브', type: 'guide' },
       { url: 'nosp-booking.html', tag: '상품 · 운영', tagClass: 'ops', title: 'NOSP · 보장형 상품 부킹', type: 'guide' },
       { url: 'policy-brand.html', tag: '상품 · 운영', tagClass: 'ops', title: '소재 심의 · 브랜드 가이드', type: 'guide' },
       { url: 'vertical-game.html', tag: '업종별 가이드', tagClass: 'vertical', title: '게임', type: 'guide' },
       { url: 'vertical-commerce.html', tag: '업종별 가이드', tagClass: 'vertical', title: '커머스 · 뷰티', type: 'guide' },
       { url: 'vertical-travel.html', tag: '업종별 가이드', tagClass: 'vertical', title: '여행 · 호텔', type: 'guide' },
       { url: 'vertical-shortdrama.html', tag: '업종별 가이드', tagClass: 'vertical', title: '숏드라마', type: 'guide' },
-      { url: 'faq.html', tag: 'FAQ · 템플릿', tagClass: 'faq', title: '자주 묻는 질문', type: 'guide' },
-      { url: 'templates.html', tag: 'FAQ · 템플릿', tagClass: 'faq', title: '메일 템플릿', type: 'guide' },
+      { url: 'faq.html', tag: 'FAQ · 자료', tagClass: 'faq', title: '자주 묻는 질문', type: 'guide' },
+      { url: 'templates.html', tag: 'FAQ · 자료', tagClass: 'faq', title: '메일 템플릿', type: 'guide' },
+      { url: 'resources.html', tag: 'FAQ · 자료', tagClass: 'faq', title: '영문 소개서 · 가이드 PDF', type: 'guide' },
     ],
     en: [
       { url: 'powerlink-understanding-en.html',  tag: 'Powerlink',           tagClass: 'powerlink', title: 'Powerlink Overview',          type: 'overview' },

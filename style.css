@@ -1072,7 +1072,8 @@ pre[class*="language-"] {
 /* reference 사이트와 같은 단일 라이트 테마로 고정 (다크 모드 뷰어에서도 동일하게 보이도록) */
 :root { color-scheme: light; }
 .dropdown a.coming-soon { cursor: default; }
-.lang-switcher .dropdown { left: auto; right: 0; transform: none; }
+.lang-switcher .dropdown,
+.nav-menu > .nav-item:nth-last-child(-n+2) .dropdown { left: auto; right: 0; transform: none; }
 
 /* 한글 단어 중간 줄바꿈 방지 (예: '광고/주'): 단어 단위로 줄바꿈, 너무 긴 영문·URL만 강제 분리 */
 body { word-break: keep-all; overflow-wrap: break-word; }
@@ -1129,6 +1130,35 @@ body { word-break: keep-all; overflow-wrap: break-word; }
 .faq-item:hover { border-color: var(--green-mid); }
 
 .code-block-wrap pre { white-space: pre-wrap; word-break: break-word; }
+
+/* 자료실 카드 */
+.doc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 8px 0 16px; }
+.doc-card { display: flex; gap: 14px; border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; background: #fff; min-width: 0; }
+.doc-card:hover { border-color: var(--green); }
+.doc-icon { font-size: 28px; line-height: 1; }
+.doc-body { min-width: 0; display: grid; gap: 4px; }
+.doc-title { font-size: 16px; font-weight: 700; margin: 0; }
+.doc-meta { font-size: 13px; color: var(--text-sub); margin: 0; }
+.doc-desc { font-size: 14.5px; margin: 4px 0 8px; }
+.doc-link { font-weight: 700; color: var(--green-dark); }
+
+/* 킥오프: 조건별 진행 방식 찾기 */
+.finder { border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; background: var(--bg-alt); display: grid; gap: 16px; margin: 16px 0; }
+.finder-q { display: grid; gap: 8px; }
+.finder-q[hidden] { display: none; }
+.finder-label { font-weight: 700; font-size: 15px; margin: 0; }
+.finder-opts { display: flex; flex-wrap: wrap; gap: 8px; }
+.finder-opts button { font: inherit; font-size: 14.5px; padding: 9px 16px; border-radius: 999px; border: 1px solid var(--border); background: #fff; color: var(--text); cursor: pointer; }
+.finder-opts button:hover { border-color: var(--green); }
+.finder-opts button:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+.finder-opts button.on { background: var(--green); border-color: var(--green); color: #fff; font-weight: 700; }
+.finder-result { display: grid; gap: 12px; }
+.finder-empty { color: var(--text-sub); margin: 0; }
+.finder-card { background: #fff; border: 1px solid var(--green-mid); border-radius: var(--radius); padding: 16px 18px; min-width: 0; }
+.finder-card h4 { margin: 0 0 8px; font-size: 15.5px; color: var(--green-dark); }
+.finder-card p { margin: 6px 0; font-size: 15px; }
+.finder-card .finder-note { color: var(--text-sub); font-size: 14px; }
+.finder-card .steps-list { margin: 8px 0; }
 
 /* 메뉴 6개 대응: 중간 폭에서 가로 스크롤 방지 */
 @media (max-width: 1240px) and (min-width: 681px) {
