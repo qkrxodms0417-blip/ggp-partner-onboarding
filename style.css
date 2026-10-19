@@ -1142,7 +1142,11 @@ body { word-break: keep-all; overflow-wrap: break-word; }
 .doc-desc { font-size: 14.5px; margin: 4px 0 8px; }
 .doc-link { font-weight: 700; color: var(--green-dark); }
 
-/* 킥오프: 조건별 진행 방식 찾기 */
+/* 대제목 아래 설명: 어두운 배경에서 잘 보이게 */
+.page-header p { color: #8ef0b8; opacity: 1; font-size: 16px; font-weight: 500; max-width: 720px; }
+.page-header p a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+
+/* 킥오프 STEP BY STEP: 질문 · 결과 표 */
 .finder { border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; background: var(--bg-alt); display: grid; gap: 16px; margin: 16px 0; }
 .finder-q { display: grid; gap: 8px; }
 .finder-q[hidden] { display: none; }

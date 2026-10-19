@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>상황별 다음 단계 — NAVER GGP 파트너 온보딩</title>
+  <title>킥오프 STEP BY STEP — NAVER GGP 파트너 온보딩</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%2303C75A%27/%3E%3Ctext x=%2716%27 y=%2723%27 font-size=%2720%27 font-weight=%27700%27 text-anchor=%27middle%27 fill=%27white%27 font-family=%27Arial%27%3EN%3C/text%3E%3C/svg%3E" />
 </head>
@@ -19,7 +19,7 @@
       <span class="nav-link active">GGP 시작하기 <span class="arrow">▾</span></span>
       <div class="dropdown">
         <a href="kickoff.html">킥오프 전 필수 준비</a>
-        <a href="next-step.html">상황별 다음 단계</a>
+        <a href="next-step.html">킥오프 STEP BY STEP</a>
         <a href="ggp-overview.html">GGP 프로그램 이해하기</a>
         <a href="ggp-setup.html">계약 · 시스템 셋업</a>
       </div>
@@ -76,8 +76,8 @@
 
 <header class="page-header">
   <div class="badge">GGP 시작하기</div>
-  <h1>상황별 다음 단계</h1>
-  <p>1번부터 7번까지 내 상황을 차례로 고르면, 지금 할 일과 그게 안 될 때 어디로 연결하면 되는지가 표로 정리됩니다.</p>
+  <h1>킥오프 STEP BY STEP</h1>
+  <p>킥오프까지 거치는 단계마다 내 상황을 차례로 고르면, 지금 할 일과 그게 안 될 때 어디로 연결하면 되는지가 표로 정리됩니다.</p>
 </header>
 
 <div class="content-wrap">
@@ -85,7 +85,7 @@
     <h3>목차</h3>
     <ul>
       <li><a href="#s1">SECTION 1. 내 상황 고르기</a></li>
-      <li><a href="#s2">SECTION 2. 전체 분기표</a></li>
+      <li><a href="#s2">SECTION 2. 모든 케이스 한꺼번에 보기</a></li>
     </ul>
   </aside>
 
@@ -95,50 +95,50 @@
         <span class="section-num">1</span>
         내 상황 고르기
       </h2>
-      <p>앞 질문에 답하면 다음 질문이 열립니다. 6번과 7번은 해당하는 것을 모두 고르세요.</p>
+      <p>앞 질문에 답하면 다음 질문이 열립니다. 고른 내용에 따라 질문 수가 달라지고, 번호는 보이는 순서대로 매겨집니다. 계정 만들기와 검수 · 보안 질문은 해당하는 것을 모두 고르세요.</p>
         <div class="finder" id="ns">
           <div class="finder-q" id="ns-cur" hidden>
-            <p class="finder-label">1. 광고주가 어떤 돈으로 광고비를 내나요?</p>
+            <p class="finder-label"><span class="ns-num"></span>. 광고주가 어떤 돈으로 광고비를 내나요?</p>
             <div class="finder-opts" data-q="cur" data-multi="0"><button type="button" data-v="fx">외화 (해외 광고주 기본)</button><button type="button" data-v="krw">원화로 내고 싶음</button><button type="button" data-v="mix">원화 · 달러가 섞여 있음</button></div>
           </div>
           <div class="finder-q" id="ns-mixcard" hidden>
-            <p class="finder-label">2. 해외에서 발급된 카드로 결제할 수 있나요?</p>
+            <p class="finder-label"><span class="ns-num"></span>. 해외에서 발급된 카드로 결제할 수 있나요?</p>
             <div class="finder-opts" data-q="mixcard" data-multi="0"><button type="button" data-v="yes">가능</button><button type="button" data-v="no">불가 · 결제 거절</button></div>
           </div>
           <div class="finder-q" id="ns-pay" hidden>
-            <p class="finder-label">3. 비즈머니는 어떻게 충전하나요?</p>
+            <p class="finder-label"><span class="ns-num"></span>. 비즈머니는 어떻게 충전하나요?</p>
             <div class="finder-opts" data-q="pay" data-multi="0"><button type="button" data-v="card">카드 결제</button><button type="button" data-v="wire">계좌 입금 · 송금</button></div>
           </div>
           <div class="finder-q" id="ns-amt" hidden>
-            <p class="finder-label">3. 한 번에 결제할 금액은?</p>
+            <p class="finder-label"><span class="ns-num"></span>. 한 번에 결제할 금액은?</p>
             <div class="finder-opts" data-q="amt" data-multi="0"><button type="button" data-v="normal">일반 금액</button><button type="button" data-v="big">고액 (카드 한도가 걱정되는 금액)</button></div>
           </div>
           <div class="finder-q" id="ns-wcur" hidden>
-            <p class="finder-label">3. 어떤 통화로 송금하나요?</p>
+            <p class="finder-label"><span class="ns-num"></span>. 어떤 통화로 송금하나요?</p>
             <div class="finder-opts" data-q="wcur" data-multi="0"><button type="button" data-v="sup">지원 통화 (USD 등 9개)</button><button type="button" data-v="other">그 외 통화</button><button type="button" data-v="conv">원화로 환전해서 보냄</button></div>
           </div>
           <div class="finder-q" id="ns-inv" hidden>
-            <p class="finder-label">4. 세금계산서를 파트너사 이름으로 받고 싶나요?</p>
+            <p class="finder-label"><span class="ns-num"></span>. 세금계산서를 파트너사 이름으로 받고 싶나요?</p>
             <div class="finder-opts" data-q="inv" data-multi="0"><button type="button" data-v="kr">예, 파트너사에 한국 사업자번호 있음</button><button type="button" data-v="ov">예, 한국 사업자번호 없음</button><button type="button" data-v="no">아니요</button></div>
           </div>
           <div class="finder-q" id="ns-part" hidden>
-            <p class="finder-label">5. 파트너사는 어디 회사인가요?</p>
+            <p class="finder-label"><span class="ns-num"></span>. 파트너사는 어디 회사인가요?</p>
             <div class="finder-opts" data-q="part" data-multi="0"><button type="button" data-v="ov">해외 파트너사 (국내 사업장 없음)</button><button type="button" data-v="kr">국내 사업자 파트너사</button></div>
           </div>
           <div class="finder-q" id="ns-acct" hidden>
-            <p class="finder-label">6. 계정을 만들면서 막힌 곳이 있나요? (여러 개 선택 가능)</p>
+            <p class="finder-label"><span class="ns-num"></span>. 계정을 만들면서 막힌 곳이 있나요? (여러 개 선택 가능)</p>
             <div class="finder-opts" data-q="acct" data-multi="1"><button type="button" data-v="ok">없음</button><button type="button" data-v="login">해외 IP · VPN으로 로그인 제한</button><button type="button" data-v="ip">IP 확인서 반려</button><button type="button" data-v="addr">법인 소재지와 사무실이 다름</button><button type="button" data-v="biz">신청서 사업자번호 · 주소 칸을 못 채움</button></div>
           </div>
           <div class="finder-q" id="ns-rev" hidden>
-            <p class="finder-label">7. 검수나 보안 쪽에서 생긴 일이 있나요? (여러 개 선택 가능)</p>
+            <p class="finder-label"><span class="ns-num"></span>. 검수나 보안 쪽에서 생긴 일이 있나요? (여러 개 선택 가능)</p>
             <div class="finder-opts" data-q="rev" data-multi="1"><button type="button" data-v="ok">없음</button><button type="button" data-v="reject">비즈채널 검수 반려</button><button type="button" data-v="ddq">광고주가 보안 질문지(DDQ)를 보냄</button></div>
           </div>
           <div class="finder-actions"><button type="button" id="ns-reset">처음부터 다시</button></div>
         </div>
-        <div id="ns-result" aria-live="polite"><p class="finder-empty">1번부터 차례로 고르면 다음 단계가 표로 쌓입니다.</p></div>
+        <div id="ns-result" aria-live="polite"><p class="finder-empty">첫 질문부터 차례로 고르면 다음 단계가 표로 쌓입니다.</p></div>
         <script>
         (function () {
-          var D = {"R": {"cur:fx": ["외화 계정 그대로 진행합니다. VAT 없이(영세율) 과금되고 세금계산서는 발행되지 않습니다.", "통화는 한 달에 한 번, 비즈머니 잔액이 0원일 때만 바꿀 수 있습니다. 첫 충전 전에 확정하세요."], "cur:krw": ["사업자 증빙을 담당 AM에게 제출해 원화 전환을 요청합니다. 원화는 VAT 10%가 붙는다고 광고주에게 먼저 알려 주세요.", "전환이 안 되면 외화 계정을 유지합니다."], "cur:mix": ["외화 계정으로 두고 해외 발급 카드로 결제하도록 연결합니다. 금액은 원화로 입력하고, 결제는 카드 통화로 되며, 비즈머니에는 바로 원화로 들어갑니다.", "해외 카드가 없거나 결제가 거절되면 2번에서 '불가'를 고르세요."], "mixcard:yes": ["광고주센터 비즈머니 &gt; 충전하기 &gt; 신용/체크 카드에서 결제합니다 (Visa · Mastercard · JCB).", "결제가 거절되면 담당 AM에게 담당 파트장 연결을 요청하세요."], "mixcard:no": ["담당 AM에게 담당 파트장 연결을 요청하세요.", "-"], "pay:card-fx": ["해외 발급 카드로 결제하면 바로 반영됩니다. 외화 계정에서는 국내 발급 카드를 쓸 수 없습니다.", "결제가 거절되면 외화 송금을 함께 쓰세요."], "pay:card-krw": ["국내 발급 카드로 결제하면 바로 반영됩니다.", "해외 발급 카드만 있다면 외화 계정이어야 합니다. 통화 전환은 담당 AM에게 요청하세요."], "pay:wire-fx": ["파트너사지원에 인보이스를 요청합니다(광고계정 ID · 금액 · 입금 예정일). 인보이스의 우리은행 외화 가상계좌로 송금하고, NSF [통합광고_파트너사지원 &gt; 해외광고주 &gt; 입금 확인 및 가상계좌 이체요청]에 인보이스를 첨부해 입금 확인을 요청합니다.", "인보이스 발행까지 영업일 5~7일 이상 걸린 사례가 있습니다. 라이브 2주 전에 시작하고, 늦어지면 담당 AM에게 확인하세요."], "pay:wire-krw": ["광고주센터에서 원화 가상계좌를 확인해 입금합니다. 보통 5분 안에 반영됩니다.", "해외 광고주 계정은 네이버페이 계좌 간편결제를 쓸 수 없습니다."], "amt:normal": ["최소 100원부터 바로 충전할 수 있습니다.", "-"], "amt:big": ["1회 결제 한도는 카드사마다 다릅니다. 결제 전에 담당 AM과 먼저 확인하세요.", "거절되면 나머지 금액은 송금으로 충전하세요."], "wcur:sup": ["USD · SGD · EUR · GBP · JPY · CNY · HKD · AUD · CAD는 그대로 송금하면 됩니다. 반영까지 영업일 1~2일(CNY는 3~4일)입니다.", "-"], "wcur:other": ["송금하기 전에 담당 AM에게 사전 문의합니다.", "안 되면 지원 통화 9개 중 하나로 송금하세요."], "wcur:conv": ["원화로 환전해서 보내면 충전되지 않습니다. 바로 담당 AM에게 알리고 처리 방법을 확인하세요.", "-"], "inv:fx": ["외화 계정은 세금계산서 위임을 쓸 수 없습니다. VAT 없이 과금되므로 따로 할 일은 없습니다.", "-"], "inv:kr": ["① 대행권을 파트너사로 이관 → ② 세금계산서 위임 설정 → ③ 광고주와 파트너사가 위임 계약 체결. 대행권 연동만으로는 파트너사 이름으로 발행되지 않습니다.", "설정이 안 되면 담당 AM에게 확인하세요."], "inv:ov": ["세금계산서는 한국 사업자번호 기준으로 발행됩니다. 이 구조를 쓸 수 있는지 담당 AM과 먼저 확인하세요.", "안 되면 외화 계정으로 진행합니다."], "inv:no": ["세금계산서는 광고주 이름으로 발행됩니다. 한국에 사업장이 없는 광고주는 VAT를 돌려받을 수 없다고 알려 주세요.", "VAT가 부담이면 외화 계정이나 세금계산서 위임을 검토하세요."], "part:ov": ["다음 달 4~6일에 수수료 인보이스를 파트너사지원으로 보냅니다. 대조를 거쳐 7~8일경 정산 요청되고 등록한 해외 계좌로 외화 지급됩니다.", "적용 환율은 계약서 기준으로 담당 AM에게 확인하세요. 초과 지급분은 다음 달 정산에서 빠집니다."], "part:kr": ["세금계산서를 발행하고, 광고비 세금계산서 발행월의 다음 달 안에 원화로 받습니다.", "-"], "acct:ok": ["서류를 제출하고, 팀원은 네이버 ID를 만들어 외국인 실명인증(여권)을 마칩니다.", "-"], "acct:login": ["막힌 네이버 ID 목록을 담당 AM에게 보내 화이트리스팅을 요청합니다. VPN 사용 등 가입 환경을 함께 알려 주면 빨라집니다.", "광고주 쪽 ID도 같은 방법으로 요청할 수 있습니다."], "acct:ip": ["클라우드 · 서버 · 호스팅 IP는 인정되지 않습니다. 사무실 고정 공인 IP로 현지 인터넷 업체(ISP)에서 확인서를 다시 받습니다.", "다시 받기 어려우면 담당 AM에게 확인하세요."], "acct:addr": ["제출 전에 담당 AM에게 미리 알립니다 (예: 홍콩 법인 · 상하이 사무실).", "-"], "acct:biz": ["담당 AM에게 입력 방법을 안내받은 뒤 제출합니다. 제출하면 검수 중에는 직접 고칠 수 없습니다.", "-"], "rev:ok": ["비즈채널 · 소재 검수(영업일 3~5일)를 거쳐 라이브합니다.", "-"], "rev:reject": ["반려 사유를 고친 뒤 파트너사요청으로 사이트 검토를 접수합니다. 기준은 <a href=\"advertiser-account.html\">해외 광고주 계정 개설</a>을 보세요.", "다시 반려되면 담당 AM에게 확인하세요."], "rev:ddq": ["담당 AM을 거쳐 네이버가 답합니다. 없는 인증서는 \"Not available\"로 답합니다. 자세한 답변은 <a href=\"advertiser-security.html\">보안 실사(DDQ)</a>를 보세요.", "답변이 늦어지면 담당 AM에게 진행 상황을 확인하세요."]}, "Q": {"cur": {"n": 1, "name": "계정 통화", "opts": {"fx": "외화 (해외 광고주 기본)", "krw": "원화로 내고 싶음", "mix": "원화 · 달러가 섞여 있음"}}, "mixcard": {"n": 2, "name": "원화 · 달러 혼합", "opts": {"yes": "가능", "no": "불가 · 결제 거절"}}, "pay": {"n": 3, "name": "충전 수단", "opts": {"card": "카드 결제", "wire": "계좌 입금 · 송금"}}, "amt": {"n": 3, "name": "카드 결제 금액", "opts": {"normal": "일반 금액", "big": "고액 (카드 한도가 걱정되는 금액)"}}, "wcur": {"n": 3, "name": "송금 통화", "opts": {"sup": "지원 통화 (USD 등 9개)", "other": "그 외 통화", "conv": "원화로 환전해서 보냄"}}, "inv": {"n": 4, "name": "세금계산서", "opts": {"kr": "예, 파트너사에 한국 사업자번호 있음", "ov": "예, 한국 사업자번호 없음", "no": "아니요"}}, "part": {"n": 5, "name": "수수료 받기", "opts": {"ov": "해외 파트너사 (국내 사업장 없음)", "kr": "국내 사업자 파트너사"}}, "acct": {"n": 6, "name": "계정 만들기", "opts": {"ok": "없음", "login": "해외 IP · VPN으로 로그인 제한", "ip": "IP 확인서 반려", "addr": "법인 소재지와 사무실이 다름", "biz": "신청서 사업자번호 · 주소 칸을 못 채움"}}, "rev": {"n": 7, "name": "검수 · 보안", "opts": {"ok": "없음", "reject": "비즈채널 검수 반려", "ddq": "광고주가 보안 질문지(DDQ)를 보냄"}}}};
+          var D = {"R": {"cur:fx": ["외화 계정 그대로 진행합니다. VAT 없이(영세율) 과금되고 세금계산서는 발행되지 않습니다. 세금계산서 위임 · 후불 · 자동충전 · 네이버페이 결제는 쓸 수 없습니다.", "통화는 한 달에 한 번, 비즈머니 잔액이 0원일 때만 바꿀 수 있습니다. 첫 충전 전에 확정하세요."], "cur:krw": ["사업자 증빙을 담당 AM에게 제출해 원화 전환을 요청합니다. 원화는 VAT 10%가 붙는다고 광고주에게 먼저 알려 주세요.", "전환이 안 되면 외화 계정을 유지합니다."], "cur:mix": ["외화 계정으로 두고 해외 발급 카드로 결제하도록 연결합니다. 금액은 원화로 입력하고, 결제는 카드 통화로 되며, 비즈머니에는 바로 원화로 들어갑니다. 외화 계정이라 VAT 없이 과금되고 세금계산서는 발행되지 않습니다.", "해외 카드가 없거나 결제가 거절되면 다음 질문에서 '불가'를 고르세요."], "mixcard:yes": ["광고주센터 비즈머니 &gt; 충전하기 &gt; 신용/체크 카드에서 결제합니다 (Visa · Mastercard · JCB).", "결제가 거절되면 담당 AM에게 담당 파트장 연결을 요청하세요."], "mixcard:no": ["담당 AM에게 담당 파트장 연결을 요청하세요.", "-"], "pay:card-fx": ["광고주센터 비즈머니 &gt; 충전하기 &gt; 신용/체크 카드에서 금액을 원화로 입력하면 카드 통화로 결제되고(Visa 3D Secure · Mastercard SecureCode · JCB J/Secure), 바로 반영됩니다. 외화 계정에서는 국내 발급 카드를 쓸 수 없습니다.", "결제가 거절되면 외화 송금을 함께 쓰세요."], "pay:card-krw": ["국내 발급 카드로 결제하면 바로 반영됩니다.", "해외 발급 카드만 있다면 외화 계정이어야 합니다. 통화 전환은 담당 AM에게 요청하세요."], "pay:wire-fx": ["파트너사지원에 인보이스를 요청합니다(광고계정 ID · 금액 · 입금 예정일). 인보이스의 우리은행 외화 가상계좌로 송금하고, NSF [통합광고_파트너사지원 &gt; 해외광고주 &gt; 입금 확인 및 가상계좌 이체요청]에 인보이스를 첨부해 입금 확인을 요청합니다.", "인보이스 발행까지 영업일 5~7일 이상 걸린 사례가 있습니다. 라이브 2주 전에 시작하고, 늦어지면 담당 AM에게 확인하세요."], "pay:wire-krw": ["광고주센터에서 원화 가상계좌를 확인해 입금합니다. 보통 5분 안에 반영됩니다.", "해외 광고주 계정은 네이버페이 계좌 간편결제를 쓸 수 없습니다."], "amt:normal": ["최소 100원부터 바로 충전할 수 있습니다.", "-"], "amt:big": ["1회 결제 한도는 카드사마다 다릅니다. 결제 전에 담당 AM과 먼저 확인하세요.", "거절되면 나머지 금액은 송금으로 충전하세요."], "wcur:sup": ["USD · SGD · EUR · GBP · JPY · CNY · HKD · AUD · CAD는 그대로 송금하면 됩니다. 반영까지 영업일 1~2일(CNY는 3~4일)입니다.", "-"], "wcur:other": ["송금하기 전에 담당 AM에게 사전 문의합니다.", "안 되면 지원 통화 9개 중 하나로 송금하세요."], "wcur:conv": ["원화로 환전해서 보내면 충전되지 않습니다. 바로 담당 AM에게 알리고 처리 방법을 확인하세요.", "-"], "inv:kr": ["① 대행권을 파트너사로 이관 → ② 세금계산서 위임 설정 → ③ 광고주와 파트너사가 위임 계약 체결. 대행권 연동만으로는 파트너사 이름으로 발행되지 않습니다. VAT 10%는 파트너사가 부가세 신고 때 매입세액 공제로 돌려받습니다.", "설정이 안 되면 담당 AM에게 확인하세요."], "inv:ov": ["세금계산서는 한국 사업자번호 기준으로 발행됩니다. 이 구조를 쓸 수 있는지 담당 AM과 먼저 확인하세요.", "안 되면 외화 계정으로 진행합니다."], "inv:no": ["세금계산서는 광고주 이름으로 발행됩니다. 한국에 사업장이 없는 광고주는 VAT를 돌려받을 수 없다고 알려 주세요.", "VAT가 부담이면 외화 계정이나 세금계산서 위임을 검토하세요."], "part:ov": ["다음 달 4~6일에 수수료 인보이스를 파트너사지원으로 보냅니다. 대조를 거쳐 7~8일경 정산 요청되고 등록한 해외 계좌로 외화 지급됩니다.", "적용 환율은 계약서 기준으로 담당 AM에게 확인하세요. 초과 지급분은 다음 달 정산에서 빠집니다."], "part:kr": ["세금계산서를 발행하고, 광고비 세금계산서 발행월의 다음 달 안에 원화로 받습니다.", "-"], "acct:ok": ["서류를 제출하고, 팀원은 네이버 ID를 만들어 외국인 실명인증(여권)을 마칩니다.", "-"], "acct:login": ["막힌 네이버 ID 목록을 담당 AM에게 보내 화이트리스팅을 요청합니다. VPN 사용 등 가입 환경을 함께 알려 주면 빨라집니다.", "광고주 쪽 ID도 같은 방법으로 요청할 수 있습니다."], "acct:ip": ["클라우드 · 서버 · 호스팅 IP는 인정되지 않습니다. 사무실 고정 공인 IP로 현지 인터넷 업체(ISP)에서 확인서를 다시 받습니다.", "다시 받기 어려우면 담당 AM에게 확인하세요."], "acct:addr": ["제출 전에 담당 AM에게 미리 알립니다 (예: 홍콩 법인 · 상하이 사무실).", "-"], "acct:biz": ["담당 AM에게 입력 방법을 안내받은 뒤 제출합니다. 제출하면 검수 중에는 직접 고칠 수 없습니다.", "-"], "rev:ok": ["비즈채널 · 소재 검수(영업일 3~5일)를 거쳐 라이브합니다.", "-"], "rev:reject": ["반려 사유를 고친 뒤 파트너사요청으로 사이트 검토를 접수합니다. 기준은 <a href=\"advertiser-account.html\">해외 광고주 계정 개설</a>을 보세요.", "다시 반려되면 담당 AM에게 확인하세요."], "rev:ddq": ["담당 AM을 거쳐 네이버가 답합니다. 없는 인증서는 \"Not available\"로 답합니다. 자세한 답변은 <a href=\"advertiser-security.html\">보안 실사(DDQ)</a>를 보세요.", "답변이 늦어지면 담당 AM에게 진행 상황을 확인하세요."]}, "Q": {"cur": {"name": "계정 통화", "opts": {"fx": "외화 (해외 광고주 기본)", "krw": "원화로 내고 싶음", "mix": "원화 · 달러가 섞여 있음"}}, "mixcard": {"name": "원화 · 달러 혼합", "opts": {"yes": "가능", "no": "불가 · 결제 거절"}}, "pay": {"name": "충전 수단", "opts": {"card": "카드 결제", "wire": "계좌 입금 · 송금"}}, "amt": {"name": "카드 결제 금액", "opts": {"normal": "일반 금액", "big": "고액 (카드 한도가 걱정되는 금액)"}}, "wcur": {"name": "송금 통화", "opts": {"sup": "지원 통화 (USD 등 9개)", "other": "그 외 통화", "conv": "원화로 환전해서 보냄"}}, "inv": {"name": "세금계산서", "opts": {"kr": "예, 파트너사에 한국 사업자번호 있음", "ov": "예, 한국 사업자번호 없음", "no": "아니요"}}, "part": {"name": "수수료 받기", "opts": {"ov": "해외 파트너사 (국내 사업장 없음)", "kr": "국내 사업자 파트너사"}}, "acct": {"name": "계정 만들기", "opts": {"ok": "없음", "login": "해외 IP · VPN으로 로그인 제한", "ip": "IP 확인서 반려", "addr": "법인 소재지와 사무실이 다름", "biz": "신청서 사업자번호 · 주소 칸을 못 채움"}}, "rev": {"name": "검수 · 보안", "opts": {"ok": "없음", "reject": "비즈채널 검수 반려", "ddq": "광고주가 보안 질문지(DDQ)를 보냄"}}}};
           var st = {};
           function show(id, on) { var el = document.getElementById("ns-" + id); el.hidden = !on; if (!on) { delete st[id]; mark(id); } }
           function mark(id) {
@@ -160,20 +160,31 @@
             show("part", step4);
             show("acct", step4 && st.part);
             show("rev", step4 && st.part && done("acct"));
+            var num = {}, k = 0;
+            document.querySelectorAll("#ns .finder-q").forEach(function (el) {
+              if (el.hidden) return; var id = el.id.slice(3); num[id] = ++k; el.querySelector(".ns-num").textContent = k;
+            });
             var rows = [];
-            function add(id, key, choice) { var r = D.R[id + ":" + key]; if (r) rows.push([D.Q[id].n + ". " + D.Q[id].name, choice || D.Q[id].opts[key], r[0], r[1]]); }
-            if (st.cur) add("cur", st.cur);
-            if (st.mixcard) add("mixcard", st.mixcard);
-            if (st.pay) add("pay", st.pay + "-" + acc, D.Q.pay.opts[st.pay]);
-            if (st.amt) add("amt", st.amt);
-            if (st.wcur) add("wcur", st.wcur);
-            if (step3 && acc === "fx") add("inv", "fx", "외화 계정 (질문 없음)");
-            if (st.inv) add("inv", st.inv);
-            if (st.part) add("part", st.part);
-            (st.acct || []).forEach(function (v) { add("acct", v); });
-            (st.rev || []).forEach(function (v) { add("rev", v); });
+            function add(id, keys, choice) {
+              var rs = keys.map(function (x) { return D.R[id + ":" + x]; }).filter(Boolean); if (!rs.length) return;
+              var many = rs.length > 1;
+              function join(a) { return many ? a.map(function (x) { return "· " + x; }).join("<br>") : a[0]; }
+              rows.push([num[id] + ". " + D.Q[id].name,
+                choice || join(keys.map(function (x) { return D.Q[id].opts[x]; })),
+                join(rs.map(function (r) { return r[0]; })),
+                join(rs.map(function (r) { return r[1]; }).filter(function (x) { return x !== "-"; })) || "-"]);
+            }
+            if (st.cur) add("cur", [st.cur]);
+            if (st.mixcard) add("mixcard", [st.mixcard]);
+            if (st.pay) add("pay", [st.pay + "-" + acc], D.Q.pay.opts[st.pay]);
+            if (st.amt) add("amt", [st.amt]);
+            if (st.wcur) add("wcur", [st.wcur]);
+            if (st.inv) add("inv", [st.inv]);
+            if (st.part) add("part", [st.part]);
+            if (st.acct && st.acct.length) add("acct", st.acct);
+            if (st.rev && st.rev.length) add("rev", st.rev);
             var out = document.getElementById("ns-result");
-            if (!rows.length) { out.innerHTML = "<p class='finder-empty'>1번부터 차례로 고르면 다음 단계가 표로 쌓입니다.</p>"; return; }
+            if (!rows.length) { out.innerHTML = "<p class='finder-empty'>첫 질문부터 차례로 고르면 다음 단계가 표로 쌓입니다.</p>"; return; }
             out.innerHTML = "<div class='table-wrap'><table class='ns-table'><thead><tr><th>단계</th><th>내 선택</th><th>다음 단계</th><th>안 되면</th></tr></thead><tbody>" +
               rows.map(function (r) { return "<tr>" + r.map(function (c) { return "<td>" + c + "</td>"; }).join("") + "</tr>"; }).join("") + "</tbody></table></div>" +
               (done("rev") ? "" : "<p class='finder-empty'>다음 질문에 답하면 표가 이어집니다.</p>");
@@ -203,37 +214,36 @@
     <section class="section" id="s2">
       <h2 class="section-title">
         <span class="section-num">2</span>
-        전체 분기표
+        모든 케이스 한꺼번에 보기
       </h2>
       <p>선택하지 않고 모든 경우를 한 번에 보고 싶을 때 쓰는 표입니다.</p>
         <div class="table-wrap">
           <table>
             <thead><tr><th>단계</th><th>상황</th><th>다음 단계</th><th>안 되면</th></tr></thead>
             <tbody>
-            <tr><td>1. 계정 통화</td><td>외화 (해외 광고주 기본)</td><td>외화 계정 그대로 진행합니다. VAT 없이(영세율) 과금되고 세금계산서는 발행되지 않습니다.</td><td>통화는 한 달에 한 번, 비즈머니 잔액이 0원일 때만 바꿀 수 있습니다. 첫 충전 전에 확정하세요.</td></tr>
-            <tr><td>1. 계정 통화</td><td>원화로 내고 싶음</td><td>사업자 증빙을 담당 AM에게 제출해 원화 전환을 요청합니다. 원화는 VAT 10%가 붙는다고 광고주에게 먼저 알려 주세요.</td><td>전환이 안 되면 외화 계정을 유지합니다.</td></tr>
-            <tr><td>1. 계정 통화</td><td>원화 · 달러가 섞여 있음</td><td>외화 계정으로 두고 해외 발급 카드로 결제하도록 연결합니다. 금액은 원화로 입력하고, 결제는 카드 통화로 되며, 비즈머니에는 바로 원화로 들어갑니다.</td><td>해외 카드가 없거나 결제가 거절되면 2번에서 '불가'를 고르세요.</td></tr>
-            <tr><td>2. 원화 · 달러 혼합</td><td>가능</td><td>광고주센터 비즈머니 &gt; 충전하기 &gt; 신용/체크 카드에서 결제합니다 (Visa · Mastercard · JCB).</td><td>결제가 거절되면 담당 AM에게 담당 파트장 연결을 요청하세요.</td></tr>
-            <tr><td>2. 원화 · 달러 혼합</td><td>불가 · 결제 거절</td><td>담당 AM에게 담당 파트장 연결을 요청하세요.</td><td>-</td></tr>
-            <tr><td>3. 충전 수단</td><td>외화 계정 · 카드</td><td>해외 발급 카드로 결제하면 바로 반영됩니다. 외화 계정에서는 국내 발급 카드를 쓸 수 없습니다.</td><td>결제가 거절되면 외화 송금을 함께 쓰세요.</td></tr>
-            <tr><td>3. 충전 수단</td><td>원화 계정 · 카드</td><td>국내 발급 카드로 결제하면 바로 반영됩니다.</td><td>해외 발급 카드만 있다면 외화 계정이어야 합니다. 통화 전환은 담당 AM에게 요청하세요.</td></tr>
-            <tr><td>3. 충전 수단</td><td>외화 계정 · 송금</td><td>파트너사지원에 인보이스를 요청합니다(광고계정 ID · 금액 · 입금 예정일). 인보이스의 우리은행 외화 가상계좌로 송금하고, NSF [통합광고_파트너사지원 &gt; 해외광고주 &gt; 입금 확인 및 가상계좌 이체요청]에 인보이스를 첨부해 입금 확인을 요청합니다.</td><td>인보이스 발행까지 영업일 5~7일 이상 걸린 사례가 있습니다. 라이브 2주 전에 시작하고, 늦어지면 담당 AM에게 확인하세요.</td></tr>
-            <tr><td>3. 충전 수단</td><td>원화 계정 · 입금</td><td>광고주센터에서 원화 가상계좌를 확인해 입금합니다. 보통 5분 안에 반영됩니다.</td><td>해외 광고주 계정은 네이버페이 계좌 간편결제를 쓸 수 없습니다.</td></tr>
-            <tr><td>3. 카드 결제 금액</td><td>고액 (카드 한도가 걱정되는 금액)</td><td>1회 결제 한도는 카드사마다 다릅니다. 결제 전에 담당 AM과 먼저 확인하세요.</td><td>거절되면 나머지 금액은 송금으로 충전하세요.</td></tr>
-            <tr><td>3. 송금 통화</td><td>그 외 통화</td><td>송금하기 전에 담당 AM에게 사전 문의합니다.</td><td>안 되면 지원 통화 9개 중 하나로 송금하세요.</td></tr>
-            <tr><td>3. 송금 통화</td><td>원화로 환전해서 보냄</td><td>원화로 환전해서 보내면 충전되지 않습니다. 바로 담당 AM에게 알리고 처리 방법을 확인하세요.</td><td>-</td></tr>
-            <tr><td>4. 세금계산서</td><td>외화 계정</td><td>외화 계정은 세금계산서 위임을 쓸 수 없습니다. VAT 없이 과금되므로 따로 할 일은 없습니다.</td><td>-</td></tr>
-            <tr><td>4. 세금계산서</td><td>예, 파트너사에 한국 사업자번호 있음</td><td>① 대행권을 파트너사로 이관 → ② 세금계산서 위임 설정 → ③ 광고주와 파트너사가 위임 계약 체결. 대행권 연동만으로는 파트너사 이름으로 발행되지 않습니다.</td><td>설정이 안 되면 담당 AM에게 확인하세요.</td></tr>
-            <tr><td>4. 세금계산서</td><td>예, 한국 사업자번호 없음</td><td>세금계산서는 한국 사업자번호 기준으로 발행됩니다. 이 구조를 쓸 수 있는지 담당 AM과 먼저 확인하세요.</td><td>안 되면 외화 계정으로 진행합니다.</td></tr>
-            <tr><td>4. 세금계산서</td><td>아니요</td><td>세금계산서는 광고주 이름으로 발행됩니다. 한국에 사업장이 없는 광고주는 VAT를 돌려받을 수 없다고 알려 주세요.</td><td>VAT가 부담이면 외화 계정이나 세금계산서 위임을 검토하세요.</td></tr>
-            <tr><td>5. 수수료 받기</td><td>해외 파트너사 (국내 사업장 없음)</td><td>다음 달 4~6일에 수수료 인보이스를 파트너사지원으로 보냅니다. 대조를 거쳐 7~8일경 정산 요청되고 등록한 해외 계좌로 외화 지급됩니다.</td><td>적용 환율은 계약서 기준으로 담당 AM에게 확인하세요. 초과 지급분은 다음 달 정산에서 빠집니다.</td></tr>
-            <tr><td>5. 수수료 받기</td><td>국내 사업자 파트너사</td><td>세금계산서를 발행하고, 광고비 세금계산서 발행월의 다음 달 안에 원화로 받습니다.</td><td>-</td></tr>
-            <tr><td>6. 계정 만들기</td><td>해외 IP · VPN으로 로그인 제한</td><td>막힌 네이버 ID 목록을 담당 AM에게 보내 화이트리스팅을 요청합니다. VPN 사용 등 가입 환경을 함께 알려 주면 빨라집니다.</td><td>광고주 쪽 ID도 같은 방법으로 요청할 수 있습니다.</td></tr>
-            <tr><td>6. 계정 만들기</td><td>IP 확인서 반려</td><td>클라우드 · 서버 · 호스팅 IP는 인정되지 않습니다. 사무실 고정 공인 IP로 현지 인터넷 업체(ISP)에서 확인서를 다시 받습니다.</td><td>다시 받기 어려우면 담당 AM에게 확인하세요.</td></tr>
-            <tr><td>6. 계정 만들기</td><td>법인 소재지와 사무실이 다름</td><td>제출 전에 담당 AM에게 미리 알립니다 (예: 홍콩 법인 · 상하이 사무실).</td><td>-</td></tr>
-            <tr><td>6. 계정 만들기</td><td>신청서 사업자번호 · 주소 칸을 못 채움</td><td>담당 AM에게 입력 방법을 안내받은 뒤 제출합니다. 제출하면 검수 중에는 직접 고칠 수 없습니다.</td><td>-</td></tr>
-            <tr><td>7. 검수 · 보안</td><td>비즈채널 검수 반려</td><td>반려 사유를 고친 뒤 파트너사요청으로 사이트 검토를 접수합니다. 기준은 <a href="advertiser-account.html">해외 광고주 계정 개설</a>을 보세요.</td><td>다시 반려되면 담당 AM에게 확인하세요.</td></tr>
-            <tr><td>7. 검수 · 보안</td><td>광고주가 보안 질문지(DDQ)를 보냄</td><td>담당 AM을 거쳐 네이버가 답합니다. 없는 인증서는 "Not available"로 답합니다. 자세한 답변은 <a href="advertiser-security.html">보안 실사(DDQ)</a>를 보세요.</td><td>답변이 늦어지면 담당 AM에게 진행 상황을 확인하세요.</td></tr>
+            <tr><td>계정 통화</td><td>외화 (해외 광고주 기본)</td><td>외화 계정 그대로 진행합니다. VAT 없이(영세율) 과금되고 세금계산서는 발행되지 않습니다. 세금계산서 위임 · 후불 · 자동충전 · 네이버페이 결제는 쓸 수 없습니다.</td><td>통화는 한 달에 한 번, 비즈머니 잔액이 0원일 때만 바꿀 수 있습니다. 첫 충전 전에 확정하세요.</td></tr>
+            <tr><td>계정 통화</td><td>원화로 내고 싶음</td><td>사업자 증빙을 담당 AM에게 제출해 원화 전환을 요청합니다. 원화는 VAT 10%가 붙는다고 광고주에게 먼저 알려 주세요.</td><td>전환이 안 되면 외화 계정을 유지합니다.</td></tr>
+            <tr><td>계정 통화</td><td>원화 · 달러가 섞여 있음</td><td>외화 계정으로 두고 해외 발급 카드로 결제하도록 연결합니다. 금액은 원화로 입력하고, 결제는 카드 통화로 되며, 비즈머니에는 바로 원화로 들어갑니다. 외화 계정이라 VAT 없이 과금되고 세금계산서는 발행되지 않습니다.</td><td>해외 카드가 없거나 결제가 거절되면 다음 질문에서 '불가'를 고르세요.</td></tr>
+            <tr><td>원화 · 달러 혼합</td><td>가능</td><td>광고주센터 비즈머니 &gt; 충전하기 &gt; 신용/체크 카드에서 결제합니다 (Visa · Mastercard · JCB).</td><td>결제가 거절되면 담당 AM에게 담당 파트장 연결을 요청하세요.</td></tr>
+            <tr><td>원화 · 달러 혼합</td><td>불가 · 결제 거절</td><td>담당 AM에게 담당 파트장 연결을 요청하세요.</td><td>-</td></tr>
+            <tr><td>충전 수단</td><td>외화 계정 · 카드</td><td>광고주센터 비즈머니 &gt; 충전하기 &gt; 신용/체크 카드에서 금액을 원화로 입력하면 카드 통화로 결제되고(Visa 3D Secure · Mastercard SecureCode · JCB J/Secure), 바로 반영됩니다. 외화 계정에서는 국내 발급 카드를 쓸 수 없습니다.</td><td>결제가 거절되면 외화 송금을 함께 쓰세요.</td></tr>
+            <tr><td>충전 수단</td><td>원화 계정 · 카드</td><td>국내 발급 카드로 결제하면 바로 반영됩니다.</td><td>해외 발급 카드만 있다면 외화 계정이어야 합니다. 통화 전환은 담당 AM에게 요청하세요.</td></tr>
+            <tr><td>충전 수단</td><td>외화 계정 · 송금</td><td>파트너사지원에 인보이스를 요청합니다(광고계정 ID · 금액 · 입금 예정일). 인보이스의 우리은행 외화 가상계좌로 송금하고, NSF [통합광고_파트너사지원 &gt; 해외광고주 &gt; 입금 확인 및 가상계좌 이체요청]에 인보이스를 첨부해 입금 확인을 요청합니다.</td><td>인보이스 발행까지 영업일 5~7일 이상 걸린 사례가 있습니다. 라이브 2주 전에 시작하고, 늦어지면 담당 AM에게 확인하세요.</td></tr>
+            <tr><td>충전 수단</td><td>원화 계정 · 입금</td><td>광고주센터에서 원화 가상계좌를 확인해 입금합니다. 보통 5분 안에 반영됩니다.</td><td>해외 광고주 계정은 네이버페이 계좌 간편결제를 쓸 수 없습니다.</td></tr>
+            <tr><td>카드 결제 금액</td><td>고액 (카드 한도가 걱정되는 금액)</td><td>1회 결제 한도는 카드사마다 다릅니다. 결제 전에 담당 AM과 먼저 확인하세요.</td><td>거절되면 나머지 금액은 송금으로 충전하세요.</td></tr>
+            <tr><td>송금 통화</td><td>그 외 통화</td><td>송금하기 전에 담당 AM에게 사전 문의합니다.</td><td>안 되면 지원 통화 9개 중 하나로 송금하세요.</td></tr>
+            <tr><td>송금 통화</td><td>원화로 환전해서 보냄</td><td>원화로 환전해서 보내면 충전되지 않습니다. 바로 담당 AM에게 알리고 처리 방법을 확인하세요.</td><td>-</td></tr>
+            <tr><td>세금계산서</td><td>예, 파트너사에 한국 사업자번호 있음</td><td>① 대행권을 파트너사로 이관 → ② 세금계산서 위임 설정 → ③ 광고주와 파트너사가 위임 계약 체결. 대행권 연동만으로는 파트너사 이름으로 발행되지 않습니다. VAT 10%는 파트너사가 부가세 신고 때 매입세액 공제로 돌려받습니다.</td><td>설정이 안 되면 담당 AM에게 확인하세요.</td></tr>
+            <tr><td>세금계산서</td><td>예, 한국 사업자번호 없음</td><td>세금계산서는 한국 사업자번호 기준으로 발행됩니다. 이 구조를 쓸 수 있는지 담당 AM과 먼저 확인하세요.</td><td>안 되면 외화 계정으로 진행합니다.</td></tr>
+            <tr><td>세금계산서</td><td>아니요</td><td>세금계산서는 광고주 이름으로 발행됩니다. 한국에 사업장이 없는 광고주는 VAT를 돌려받을 수 없다고 알려 주세요.</td><td>VAT가 부담이면 외화 계정이나 세금계산서 위임을 검토하세요.</td></tr>
+            <tr><td>수수료 받기</td><td>해외 파트너사 (국내 사업장 없음)</td><td>다음 달 4~6일에 수수료 인보이스를 파트너사지원으로 보냅니다. 대조를 거쳐 7~8일경 정산 요청되고 등록한 해외 계좌로 외화 지급됩니다.</td><td>적용 환율은 계약서 기준으로 담당 AM에게 확인하세요. 초과 지급분은 다음 달 정산에서 빠집니다.</td></tr>
+            <tr><td>수수료 받기</td><td>국내 사업자 파트너사</td><td>세금계산서를 발행하고, 광고비 세금계산서 발행월의 다음 달 안에 원화로 받습니다.</td><td>-</td></tr>
+            <tr><td>계정 만들기</td><td>해외 IP · VPN으로 로그인 제한</td><td>막힌 네이버 ID 목록을 담당 AM에게 보내 화이트리스팅을 요청합니다. VPN 사용 등 가입 환경을 함께 알려 주면 빨라집니다.</td><td>광고주 쪽 ID도 같은 방법으로 요청할 수 있습니다.</td></tr>
+            <tr><td>계정 만들기</td><td>IP 확인서 반려</td><td>클라우드 · 서버 · 호스팅 IP는 인정되지 않습니다. 사무실 고정 공인 IP로 현지 인터넷 업체(ISP)에서 확인서를 다시 받습니다.</td><td>다시 받기 어려우면 담당 AM에게 확인하세요.</td></tr>
+            <tr><td>계정 만들기</td><td>법인 소재지와 사무실이 다름</td><td>제출 전에 담당 AM에게 미리 알립니다 (예: 홍콩 법인 · 상하이 사무실).</td><td>-</td></tr>
+            <tr><td>계정 만들기</td><td>신청서 사업자번호 · 주소 칸을 못 채움</td><td>담당 AM에게 입력 방법을 안내받은 뒤 제출합니다. 제출하면 검수 중에는 직접 고칠 수 없습니다.</td><td>-</td></tr>
+            <tr><td>검수 · 보안</td><td>비즈채널 검수 반려</td><td>반려 사유를 고친 뒤 파트너사요청으로 사이트 검토를 접수합니다. 기준은 <a href="advertiser-account.html">해외 광고주 계정 개설</a>을 보세요.</td><td>다시 반려되면 담당 AM에게 확인하세요.</td></tr>
+            <tr><td>검수 · 보안</td><td>광고주가 보안 질문지(DDQ)를 보냄</td><td>담당 AM을 거쳐 네이버가 답합니다. 없는 인증서는 "Not available"로 답합니다. 자세한 답변은 <a href="advertiser-security.html">보안 실사(DDQ)</a>를 보세요.</td><td>답변이 늦어지면 담당 AM에게 진행 상황을 확인하세요.</td></tr>
             </tbody>
           </table>
         </div>
