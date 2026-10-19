@@ -1159,6 +1159,11 @@ body { word-break: keep-all; overflow-wrap: break-word; }
 .finder-card p { margin: 6px 0; font-size: 15px; }
 .finder-card .finder-note { color: var(--text-sub); font-size: 14px; }
 .finder-card .steps-list { margin: 8px 0; }
+.finder-actions { display: flex; justify-content: flex-end; }
+.finder-actions button { font: inherit; font-size: 13.5px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--border); background: #fff; color: var(--text-sub); cursor: pointer; }
+#ns-result { margin: 16px 0; }
+.ns-table td:nth-child(1) { white-space: nowrap; font-weight: 700; }
+.ns-table td:nth-child(3) { min-width: 240px; }
 
 /* 메뉴 6개 대응: 중간 폭에서 가로 스크롤 방지 */
 @media (max-width: 1240px) and (min-width: 681px) {

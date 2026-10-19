@@ -130,6 +130,7 @@ function initSearch() {
   const PAGE_SETS = {
     ko: [
       { url: 'kickoff.html', tag: 'GGP 시작하기', tagClass: 'ggp', title: '킥오프 전 필수 준비', type: 'guide' },
+      { url: 'next-step.html', tag: 'GGP 시작하기', tagClass: 'ggp', title: '상황별 다음 단계', type: 'guide' },
       { url: 'ggp-overview.html', tag: 'GGP 시작하기', tagClass: 'ggp', title: 'GGP 프로그램 이해하기', type: 'guide' },
       { url: 'ggp-setup.html', tag: 'GGP 시작하기', tagClass: 'ggp', title: '계약 · 시스템 셋업', type: 'guide' },
       { url: 'advertiser-account.html', tag: '광고주 온보딩', tagClass: 'onboard', title: '해외 광고주 계정 개설', type: 'guide' },
