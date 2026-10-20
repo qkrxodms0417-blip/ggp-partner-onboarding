@@ -1,0 +1,204 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>合同 · 试点合作伙伴指南</title><style>
+@font-face{font-family:"NSNeo";font-weight:300;src:url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.woff) format("woff")}
+@font-face{font-family:"NSNeo";font-weight:400;src:url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.woff) format("woff")}
+@font-face{font-family:"NSNeo";font-weight:700;src:url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff) format("woff")}
+@font-face{font-family:"NSNeo";font-weight:800;src:url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.woff) format("woff")}
+@font-face{font-family:"NSNeo";font-weight:900;src:url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.woff) format("woff")}
+:root{--g:#03C75A;--gd:#028A3F;--gl:#E9F9F0;--gm:#BDEBD1;--ink:#1B1F23;--sub:#5B6470;--line:#E3E7EB;--bg:#F6F8F7;--nv:#EEF3FF;--nvd:#2F54C8;--warn:#FFF7E0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;word-break:keep-all;overflow-wrap:anywhere;font:16px/1.7 "NSNeo","NanumSquare Neo","Pretendard","Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--gd)}
+.top{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:14px;padding:12px 24px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:17px;color:var(--ink);text-decoration:none}
+.logo i{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:6px;background:var(--g);color:#fff;font-style:normal;font-weight:900}
+.top .sp{flex:1}.top .ask{font-size:14px;color:var(--sub)}
+.wrap{display:grid;grid-template-columns:250px minmax(0,1fr);max-width:1180px;margin:0 auto;gap:32px;padding:28px 24px 80px}
+nav.side{position:sticky;top:76px;align-self:start}
+nav.side h5{margin:0 0 8px;font-size:12px;color:var(--sub);letter-spacing:.04em}
+nav.side ul{list-style:none;margin:0;padding:0}
+nav.side li>a,nav.side li>span{display:flex;justify-content:space-between;padding:8px 12px;border-radius:8px;text-decoration:none;color:var(--ink);font-weight:600;font-size:15px}
+nav.side li>a:hover{background:var(--gl)}
+nav.side li.on>a{background:var(--gl);color:var(--gd)}
+nav.side li>span{color:#A0A8B0;font-weight:500}nav.side li>span small{font-size:11px;border:1px solid var(--line);border-radius:999px;padding:0 7px}
+nav.side ol{list-style:none;margin:2px 0 8px;padding:0 0 0 14px;border-left:2px solid var(--gm)}
+nav.side ol a{display:block;padding:4px 10px;font-size:14px;color:var(--sub);text-decoration:none}nav.side ol a:hover{color:var(--gd)}
+main article{background:#fff;border:1px solid var(--line);border-radius:14px;padding:34px 40px;margin-bottom:28px;scroll-margin-top:80px}
+.crumb{font-size:13px;color:var(--sub);margin-bottom:6px}.crumb b{color:var(--gd);font-weight:600}
+h1{font-size:30px;margin:0 0 10px;letter-spacing:-.02em}
+h2{font-size:21px;margin:38px 0 12px;padding-top:6px;scroll-margin-top:84px}
+h3{margin:0;font-size:18px}h4{margin:0 0 10px;font-size:15px}
+.lead{font-size:17.5px;color:#333;margin:0 0 18px}
+.small{font-size:13.5px;color:var(--sub)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:8px 0 6px}
+.facts div{border:1px solid var(--gm);background:var(--gl);border-radius:12px;padding:14px 16px}
+.facts em{display:block;font-style:normal;font-size:12.5px;color:var(--gd);font-weight:700}
+.facts b{display:block;font-size:18px;margin:2px 0}.facts small{color:var(--sub);font-size:13px}
+.note{border-radius:10px;padding:12px 16px;margin:16px 0;font-size:15px}
+.note.info{background:var(--warn);border:1px solid #F2DB9A}
+/* 두 줄 흐름도 */
+.lf{display:grid;grid-template-columns:76px repeat(var(--cols),minmax(0,1fr));grid-template-rows:auto auto auto;grid-auto-flow:column;gap:8px;margin:14px 0 6px;align-items:stretch}.lf-col{display:contents}
+.lf-label{display:flex;align-items:center;font-size:13px;font-weight:800;color:var(--gd)}.lf-label.nv{color:var(--nvd)}
+.lf-step{position:relative;background:var(--g);color:#fff;border-radius:10px;padding:10px 10px;font-weight:700;display:flex;gap:8px;align-items:center}
+.lf-step:not(:last-child)::after{content:"";position:absolute;right:-9px;top:50%;width:0;height:0;border:7px solid transparent;border-left-color:var(--g);transform:translateY(-50%);z-index:2}
+.lf-no{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#fff;color:var(--gd);font-size:12.5px;flex:none}
+.lf-title{font-size:14px;line-height:1.3}a.lf-step{text-decoration:none;transition:background .15s}a.lf-step:hover{background:var(--gd)}a.lf-step:hover::after{border-left-color:var(--gd)}.lf-go{margin-left:auto;font-size:18px;line-height:1;opacity:.8}section.step{scroll-margin-top:72px}section.step:target{box-shadow:0 0 0 3px var(--gm)}.lf-hint{font-size:13px;color:var(--sub);margin:4px 0 0}
+.lf-cell{border:1px solid var(--gm);background:var(--gl);border-radius:10px;padding:10px 12px;font-size:14px;line-height:1.45}
+.lf-cell.nv{border-color:#C9D6FA;background:var(--nv)}
+.lf-cell.empty{background:#fff;border-style:dashed;color:#B5BCC4;text-align:center}
+.after{margin:10px 0 0;font-size:14.5px;color:var(--sub)}
+a.soon{color:var(--sub);text-decoration:none;border-bottom:1px dashed}
+/* 가로 체인 */
+ol.chain{list-style:none;display:flex;gap:10px;margin:14px 0 6px;padding:0;counter-reset:c}
+ol.chain li{position:relative;flex:1;background:#fff;border:1.5px solid var(--g);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:2px}
+ol.chain li:not(:last-child)::after{content:"";position:absolute;right:-12px;top:50%;width:12px;height:2px;background:var(--g)}
+.ch-no{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--g);color:#fff;font-weight:800;font-size:13px;margin-bottom:4px}
+ol.chain b{font-size:15px}ol.chain small{color:var(--sub);font-size:13px;line-height:1.4}
+.ch-note{font-size:13.5px;color:var(--sub);margin:4px 0 0}
+/* 단계 카드 */
+section.step{border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:14px 0;scroll-margin-top:84px}
+section.step header{display:flex;align-items:center;gap:10px;flex-wrap:wrap}section.step header h3{margin-right:auto}.ask-chip{font-size:13px;color:var(--sub);background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:4px 12px}.ask-chip em{font-style:normal;font-weight:700;color:var(--gd);margin-right:6px}section.step{margin-top:14px}
+.step-no{display:inline-grid;place-items:center;min-width:30px;height:30px;padding:0 8px;border-radius:999px;background:var(--gl);color:var(--gd);font-weight:800}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin:10px 0 6px;font-size:13.5px;color:var(--sub)}
+.meta em{font-style:normal;font-weight:700;color:var(--gd);margin-right:5px}
+section.step ul{padding-left:20px;margin:8px 0}section.step li{margin:4px 0}
+.help-box{border:1px solid #C9D6FA;background:var(--nv);border-radius:12px;padding:16px 20px;margin:18px 0 6px}
+.help-box h4{color:var(--nvd)}
+.help-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.help-grid div{background:#fff;border-radius:8px;padding:10px 12px;font-size:14.5px}
+.help-grid em{display:block;font-style:normal;font-size:12.5px;color:var(--sub);font-weight:700}
+.files{margin:14px 0 4px}
+a.file{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:10px;padding:9px 14px;margin:0 8px 8px 0;text-decoration:none;color:var(--ink)}
+a.file:hover{border-color:var(--g)}
+.file-ic{background:#E5484D;color:#fff;font-size:11px;font-weight:800;border-radius:4px;padding:3px 6px}
+a.file b{display:block;font-size:14.5px}a.file small{color:var(--sub);font-size:12.5px}
+details.more{margin-top:12px;border-top:1px dashed var(--line);padding-top:10px}
+details.more>summary{cursor:pointer;color:var(--gd);font-weight:700;font-size:14.5px}
+.shots{display:grid;gap:14px;margin-top:12px}
+figure.shot{margin:12px 0 0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+figure.shot img{display:block;width:100%;height:auto}
+figure.shot figcaption{font-size:13.5px;color:var(--sub);padding:8px 12px;border-top:1px solid var(--line)}
+.tbl{overflow-x:auto;margin:10px 0}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+th,td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+th{background:var(--bg);font-size:13.5px}td:first-child{font-weight:700;white-space:nowrap}
+.mono{font-family:"NSNeo",sans-serif;font-weight:700;font-size:13.5px;background:var(--bg);border-radius:8px;padding:10px 12px}
+pre.letter{white-space:pre-wrap;font:13.5px/1.7 "NSNeo",sans-serif;background:var(--bg);border-radius:8px;padding:14px 16px}
+.nn{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--gm);color:var(--gd);font-size:11.5px;font-weight:800;margin-right:8px;flex:none}
+nav.side li>a{justify-content:flex-start;align-items:center}
+.facts.num div{position:relative;padding-left:58px}.fn{position:absolute;left:16px;top:16px;width:30px;height:30px;border-radius:50%;background:var(--g);color:#fff;display:grid;place-items:center;font-weight:800}
+.facts.num b{font-size:17px}.facts:not(.num){grid-template-columns:repeat(2,1fr)}
+.prep{background:var(--bg);border-radius:10px;padding:12px 16px;margin:10px 0}.prep h4{margin:0 0 4px;color:var(--gd);font-size:14px}.prep ul{margin:4px 0}
+h3.sub{font-size:17px;margin:26px 0 8px}
+ol.plain{padding-left:22px}ol.plain li{margin:6px 0}
+.hub a.soon{opacity:.55;pointer-events:none}.hub{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;margin:18px 0}
+.hub a{display:flex;flex-direction:column;gap:4px;border:1px solid var(--line);border-radius:12px;padding:16px 18px;text-decoration:none;color:var(--ink)}
+.hub a:hover{border-color:var(--g);box-shadow:0 2px 10px rgba(3,199,90,.12)}.hub b{font-size:16.5px}.hub small{color:var(--sub);font-size:13.5px}
+.pn{display:flex;justify-content:space-between;gap:12px;margin:-8px 0 20px}.pn a{border:1px solid var(--line);background:#fff;border-radius:10px;padding:10px 16px;text-decoration:none;font-weight:700}.pn .nx{margin-left:auto}
+.crumb a{color:var(--sub);text-decoration:none}
+.tree{border:1px solid var(--line);border-radius:12px;padding:18px;margin:12px 0;text-align:center}
+.tree b{display:block}.tree small{display:block;color:var(--sub);font-size:13px}
+.t-top{display:inline-block;background:var(--g);color:#fff;border-radius:10px;padding:10px 22px}.t-top small{color:#E6FFF0}
+.t-line{width:2px;height:18px;background:var(--g);margin:0 auto}
+.t-kids{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;border-top:2px solid var(--g);padding-top:14px}
+.t-kids div{background:var(--gl);border:1px solid var(--gm);border-radius:10px;padding:10px}
+.t-foot{margin-top:12px;font-size:14px;color:var(--sub)}.t-foot b{display:inline;color:var(--ink)}
+.levels{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}
+.lv{border:1px solid var(--line);border-radius:12px;padding:14px 16px}.lv h4{color:var(--gd)}
+.lv ol{list-style:none;margin:0;padding:0}.lv li{position:relative;border-left:3px solid var(--g);margin:0 0 8px 8px;padding:6px 12px;background:var(--gl);border-radius:0 8px 8px 0}
+.lv li:nth-child(2){margin-left:24px}.lv li:nth-child(3){margin-left:40px}.lv li b{display:block}.lv li small{color:var(--sub);font-size:13px}
+table.cmp td:first-child{color:var(--gd)}table.cmp th:not(:first-child){background:var(--gl);color:var(--gd)}
+.file-ic.doc{background:#2B579A}.file-ic.xls{background:#217346}
+.inv{border:1px solid #c9d3cf;border-radius:8px;padding:18px 22px;font-size:14px;background:#fff;max-width:640px}.inv h4{font-size:18px}.inv table td:first-child{white-space:normal}.inv .r{text-align:right}.inv .muted{color:var(--sub)}
+ol.figsteps{list-style:none;padding:0;margin:14px 0}
+ol.figsteps>li{border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:0 0 12px}
+.fs-head{display:flex;align-items:center;gap:10px}.fs-head b{font-size:16px}
+.fs-no{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--g);color:#fff;font-weight:800;font-size:13.5px;flex:none}
+ol.figsteps p{margin:8px 0 0}
+ul.check{list-style:none;padding:0;margin:12px 0;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+ul.check li{position:relative;border:1px solid var(--gm);background:var(--gl);border-radius:10px;padding:10px 12px 10px 40px}
+ul.check li::before{content:"";position:absolute;left:12px;top:12px;width:16px;height:16px;border:2px solid var(--g);border-radius:4px;background:#fff}
+ul.check b{display:block;font-size:14.5px}ul.check span{font-size:13.5px;color:var(--sub)}
+details.opt{border:1px solid var(--line);border-radius:12px;margin:10px 0;padding:0}
+details.opt>summary{cursor:pointer;padding:14px 18px;font-weight:700;font-size:16px;list-style:none}
+details.opt>summary::-webkit-details-marker{display:none}details.opt>summary::after{content:" ▾";color:var(--sub)}
+details.opt[open]>summary{border-bottom:1px solid var(--line)}
+.tag{display:inline-block;font-size:12px;font-weight:700;color:var(--nvd);background:var(--nv);border-radius:999px;padding:2px 9px;margin-right:8px}
+.opt-body{padding:6px 18px 14px}
+footer{max-width:1180px;margin:0 auto;padding:0 24px 40px;font-size:13px;color:var(--sub)}
+@media(max-width:900px){.top .ask{display:none}.logo{white-space:nowrap}.wrap{grid-template-columns:1fr;padding:16px}nav.side{position:static}main article{padding:22px 18px}
+.facts,.facts.num,.facts:not(.num),.help-grid,.levels,.t-kids,ul.check{grid-template-columns:1fr}
+.lf{display:block}.lf-col{display:block;margin-bottom:12px}.lf-labels{display:none}.lf-step::after{display:none}.lf-col .lf-cell{margin-top:6px}.lf-cell.pt::before{content:"合作伙伴 · ";font-weight:800;color:var(--gd)}.lf-cell.nv::before{content:"NAVER · ";font-weight:800;color:var(--nvd)}.lf-cell.empty{display:none}
+ol.chain{flex-direction:column}ol.chain li:not(:last-child)::after{right:auto;left:26px;top:auto;bottom:-10px;width:2px;height:10px}}
+
+/* ---- 도식 리디자인: 셰브런 단계 + 헤더 바 블록 ---- */
+.lf{column-gap:4px;row-gap:6px}
+.lf-label{justify-content:center;background:var(--g);color:#fff;border-radius:4px;font-size:13.5px;letter-spacing:.02em}
+.lf-label.nv{background:var(--nvd);color:#fff}
+.lf-step{background:#D6F7E6;color:#0B3B24;border-radius:0;min-height:60px;padding:10px 18px 10px 24px;gap:6px;
+  clip-path:polygon(0 0,calc(100% - 16px) 0,100% 50%,calc(100% - 16px) 100%,0 100%,16px 50%)}
+.lf-col:nth-child(2) .lf-step{padding-left:12px;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 50%,calc(100% - 16px) 100%,0 100%)}
+.lf-step:not(:last-child)::after{display:none}
+.lf-no{background:var(--g);color:#fff}
+.lf-title{font-weight:800;font-size:14px;word-break:keep-all}
+a.lf-step{color:#0B3B24}a.lf-step:hover{background:var(--g);color:#fff}a.lf-step:hover .lf-no{background:#fff;color:var(--gd)}
+.lf-go{display:none}
+.lf-cell{border:0;border-radius:4px;background:#EEFAF3;font-size:14px}
+.lf-cell.nv{border:0;background:#EEF3FF}
+.lf-cell.empty{background:transparent;border:1px dashed #DDE3E8}
+ol.chain{gap:4px}
+ol.chain li{background:#D6F7E6;border:0;border-radius:0;padding:14px 30px 14px 32px;
+  clip-path:polygon(0 0,calc(100% - 16px) 0,100% 50%,calc(100% - 16px) 100%,0 100%,16px 50%)}
+ol.chain li:first-child{padding-left:18px;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 50%,calc(100% - 16px) 100%,0 100%)}
+ol.chain li:last-child{background:#8EF0C0}
+ol.chain li:not(:last-child)::after{display:none}
+ol.chain b{font-weight:800;color:#0B3B24}ol.chain small{color:#3C5A4B}
+.facts.num div{background:#fff;border:1px solid var(--line);border-top:4px solid var(--g);border-radius:6px;padding:20px 18px 20px 62px;display:flex;align-items:center;min-height:76px}
+.facts.num b{font-size:17px;font-weight:800;margin:0}.facts.num .fn{top:50%;transform:translateY(-50%)}
+.note.warn{background:#FFF3F2;border:1px solid #F6CBC7;border-left:4px solid #E5534B}
+.warn-tag{display:inline-block;background:#E5534B;color:#fff;font-size:12.5px;border-radius:4px;padding:1px 8px;margin-right:10px;vertical-align:1px}
+h1,h2,h3,h4,b,strong{font-weight:800}.lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:2px;margin-right:14px;font-size:13px}.lang a{padding:3px 12px;border-radius:999px;text-decoration:none;color:var(--sub);font-weight:700}.lang a.on{background:var(--g);color:#fff}svg.lock{vertical-align:-1px;margin-right:4px}a.ch-link{display:flex;flex-direction:column;gap:2px;color:inherit;text-decoration:none}ol.chain li:has(a.ch-link):hover{background:var(--g)}ol.chain li:has(a.ch-link):hover b,ol.chain li:has(a.ch-link):hover small{color:#fff}h2[id^=c-]{scroll-margin-top:72px}a.term{color:inherit;text-decoration:underline dotted var(--g);text-underline-offset:3px;text-decoration-thickness:2px}a.term:hover{color:var(--gd)}ul.cond{margin:0;padding-left:18px}ul.cond li{margin:2px 0}.warn-tag.sm{font-size:11.5px;padding:0 6px;margin-right:6px}dl.gloss{margin:8px 0}dl.gloss>div{border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:0 0 10px;scroll-margin-top:72px}dl.gloss>div:target{border-color:var(--g);box-shadow:0 0 0 3px var(--gm)}dl.gloss dt{font-weight:800;font-size:16.5px}dl.gloss dt small{font-weight:400;color:var(--sub);margin-left:8px;font-size:13px}dl.gloss dd{margin:6px 0 0}
+@media(max-width:900px){
+.lf-step,.lf-col:nth-child(2) .lf-step,ol.chain li,ol.chain li:first-child{clip-path:none;border-radius:8px;padding:12px 16px}
+.lf-cell{border-radius:6px}
+}
+</style></head><body>
+<div class="top"><a class="logo" href="index_zh.html"><i>N</i>试点合作伙伴指南</a><span class="sp"></span><span class="lang"><a class="" href="contract.html">한국어</a><a class="on" href="contract_zh.html">中文</a></span><span class="ask">咨询 <a href="mailto:dl_adpartner_global@navercorp.com">dl_adpartner_global@navercorp.com</a></span></div>
+<div class="wrap"><nav class="side"><h5>指南目录</h5><ul><li><a href="program_zh.html"><span class="nn">1</span>代理商试点计划</a></li><li class="on"><a href="contract_zh.html"><span class="nn">2</span>合同</a><ol><li><a href="#c-check">事先准备</a></li><li><a href="#c-path">1. 创建PATH账户</a></li><li><a href="#c-review">2. 审阅合同</a></li><li><a href="#c-sign">3. PATH电子签名</a></li><li><a href="#c-letter">4. 领取参与确认函</a></li></ol></li><li><span><span><span class="nn">3</span>合作伙伴注册</span><small><svg class="lock" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4.5 7V5a3.5 3.5 0 0 1 7 0v2h.5a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1zm1.5 0h4V5a2 2 0 0 0-4 0z" fill="currentColor"/></svg>筹备中</small></span></li><li><span><span><span class="nn">4</span>广告运营</span><small><svg class="lock" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4.5 7V5a3.5 3.5 0 0 1 7 0v2h.5a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1zm1.5 0h4V5a2 2 0 0 0-4 0z" fill="currentColor"/></svg>筹备中</small></span></li><li><span><span><span class="nn">5</span>结算</span><small><svg class="lock" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4.5 7V5a3.5 3.5 0 0 1 7 0v2h.5a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1zm1.5 0h4V5a2 2 0 0 0-4 0z" fill="currentColor"/></svg>筹备中</small></span></li><li><a href="glossary_zh.html"><span class="nn">Aa</span>术语表</a></li></ul></nav><main><article><div class="crumb"><a href="index_zh.html">试点合作伙伴指南</a> › <b>合同</b></div><h1>合同</h1><p class="lead">与NAVER的合同通过电子合同网站PATH进行。从注册PATH到开具试点参与确认函共四个步骤</p>
+<ol class="chain"><li><a class="ch-link" href="#c-path"><span class="ch-no">1</span><b>创建PATH账户</b><small>申请注册后由NAVER审批</small></a></li><li><a class="ch-link" href="#c-review"><span class="ch-no">2</span><b>审阅合同</b><small>通过邮件收到的英文合同</small></a></li><li><a class="ch-link" href="#c-sign"><span class="ch-no">3</span><b>PATH电子签名</b><small>NAVER签署后合作伙伴签署</small></a></li><li><a class="ch-link" href="#c-letter"><span class="ch-no">4</span><b>领取参与确认函</b><small>仅在需要时申请</small></a></li></ol>
+<div class="help-box"><h4>遇到问题时</h4><div class="help-grid"><div><em>PATH注册 · 登录 · 审批</em><a href="mailto:partner_system@navercorp.com">partner_system@navercorp.com</a></div><div><em>合同内容 · 日程 · 参与确认函</em>负责AM（抄送 <a href="mailto:dl_adpartner_global@navercorp.com">dl_adpartner_global@navercorp.com</a>)</div></div></div>
+<h2 id="c-check">签约前需准备的事项</h2>
+<p>提前准备以下内容，可使签约更加顺利</p>
+<ul class="check"><li><b>签约主体法人信息</b><span>英文正式法人名称、注册号、地址、代表人姓名</span></li><li><b>合同负责人</b><span>注册PATH的负责人公司邮箱及联系方式</span></li><li><b>签署权限人</b><span>可代表公司进行电子签名的人员及公司印章图片</span></li><li><b>合同审阅负责人</b><span>负责法务或合同审阅的人员</span></li><li><b>收取佣金的海外账户</b><span>户名（Beneficiary）与法人名称一致的账户</span></li><li><b>与广告主的合同</b><span>准备加入个人信息境外转移同意条款</span></li><li><b>付款方式</b><span>试点以先充值后使用广告费的预付方式为准</span></li></ul>
+<h2 id="c-path">1. 创建PATH账户</h2>
+<p>PATH是与NAVER确认合同并进行电子签名的网站，签署完成的合同也可在此查看。在 <a href="https://partner.navercorp.com/" target="_blank" rel="noopener">partner.navercorp.com</a>上申请注册，经NAVER批准后即可使用。可在右上角语言菜单中选择English、简体中文、日本語等</p>
+<ol class="figsteps"><li><div class="fs-head"><span class="fs-no">1</span><b>点击Subscribe</b></div><p>在PATH首页点击登录框下方的“Subscribe”</p><figure class="shot"><a href="assets/X02.jpg" target="_blank" rel="noopener"><img src="assets/X02.jpg" alt="PATH首页（English）" loading="lazy"></a><figcaption>PATH首页（English）</figcaption></figure></li><li><div class="fs-head"><span class="fs-no">2</span><b>确认是否已注册</b></div><p>输入国家、类型（Business）、公司名称、注册号后点击“Confirm”。如无注册记录，确认所需材料说明后点击“Next”继续</p><figure class="shot"><a href="assets/Y01.jpg" target="_blank" rel="noopener"><img src="assets/Y01.jpg" alt="第1步 Check Subscribed Status（示例值）" loading="lazy"></a><figcaption>第1步 Check Subscribed Status（示例值）</figcaption></figure></li><li><div class="fs-head"><span class="fs-no">3</span><b>填写信息</b></div><p>设置管理员账号（公司邮箱）和密码后，完成邮箱及手机验证</p><figure class="shot"><a href="assets/Y03.jpg" target="_blank" rel="noopener"><img src="assets/Y03.jpg" alt="第2步 填写管理员账户信息（示例值）" loading="lazy"></a><figcaption>第2步 填写管理员账户信息（示例值）</figcaption></figure></li><li><div class="fs-head"><span class="fs-no">4</span><b>同意条款 · 申请注册</b></div><p>同意必选条款并点击“Create an account and log in”即完成注册申请。经NAVER批准后即可登录</p><figure class="shot"><a href="assets/Y04.jpg" target="_blank" rel="noopener"><img src="assets/Y04.jpg" alt="同意条款后的注册申请按钮" loading="lazy"></a><figcaption>同意条款后的注册申请按钮</figcaption></figure></li></ol>
+<div class="note info">申请注册后，将法人名称、注册号、PATH账号（邮箱）、负责人姓名及联系方式发送给负责AM。NAVER将在该账户中上传合同</div>
+<div class="files"><h4>PATH官方手册（英文）</h4><a class="file" href="files/NAVER_PATH_Signup_Manual_EN.pdf" download><span class="file-ic pdf">PDF</span><span><b>Signup Manual · 注册手册</b><small>34页 · PDF</small></span></a><a class="file" href="files/NAVER_PATH_User_Manual_EN.pdf" download><span class="file-ic pdf">PDF</span><span><b>User Manual · 使用手册</b><small>31页 · PDF</small></span></a></div>
+<h2 id="c-review">2. 审阅合同</h2>
+<p>负责AM将通过邮件发送英文合同。签署前务必确认以下四项条件，需确认或要求变更的条款请在签署前通过邮件反馈</p>
+<div class="tbl"><table class=""><thead><tr><th>必确认条件</th><th>确认内容</th></tr></thead><tbody><tr><td>1. 广告费充值</td><td><ul class="cond"><li>以预付（投放前先充值）方式为基本</li><li>须向广告主广告账户的 <a class="term" href="glossary_zh.html#bizmoney">Bizmoney</a>充值后广告方可展示</li><li>充值方式可选择（1）海外信用卡（2）外币汇款</li></ul></td></tr><tr><td>2. 佣金核定</td><td><ul class="cond"><li>各产品（例：搜索广告、效果型展示广告）的佣金比例依据合同中的 <a class="term" href="glossary_zh.html#fee-annex">佣金附属协议</a>确定</li><li>按实际付费投放的广告费（<a class="term" href="glossary_zh.html#paid-spend">付费消耗额</a>）计算，以 <a class="term" href="glossary_zh.html#coupon">免费优惠券</a>形式发放的金额不计入</li></ul></td></tr><tr><td>3. 结算</td><td><ul class="cond"><li>按每月1日至月末使用的广告费计算佣金</li><li>次月首个工作日上传至 <a class="term" href="glossary_zh.html#manager">管理账户</a>的 <a class="term" href="glossary_zh.html#statement">月度结算单</a>，与NAVER交叉核对</li><li><b class="warn-tag sm">注意</b>金额有误时须在4个工作日内回复</li></ul></td></tr><tr><td>4. 支付</td><td><ul class="cond"><li><a class="term" href="glossary_zh.html#invoice">佣金发票</a>提交后由NAVER审核</li><li>次月15日左右以外币汇入已登记的海外账户</li><li>以韩元计算的佣金按NAVER广告系统设定的汇率换算后支付</li><li><b class="warn-tag sm">注意</b>支付金额以NAVER广告系统汇率为准，可能与收款当日按银行汇率计算的金额存在差异</li></ul></td></tr></tbody></table></div>
+
+<h2 id="c-sign">3. PATH电子签名</h2>
+<p>NAVER内部审批完成后由NAVER先行签署，并自动向合作伙伴发送以下标题的邮件。收到邮件后按以下顺序进行</p>
+<p class="mono">[Naver Corp.] has signed the electronic contract, and request e-signing from [合作伙伴名称]</p>
+<ol class="figsteps"><li><div class="fs-head"><span class="fs-no">1</span><b>查找待签署合同</b></div><p>登录PATH后在首页Transaction Status中查看合同进度。点击Contract/PO中的待审批（Approval Waiting）项</p><figure class="shot"><a href="assets/Z01.jpg" target="_blank" rel="noopener"><img src="assets/Z01.jpg" alt="PATH官方使用手册（User Manual）截图：登录后首页" loading="lazy"></a><figcaption>PATH官方使用手册（User Manual）截图：登录后首页</figcaption></figure></li><li><div class="fs-head"><span class="fs-no">2</span><b>确认合同</b></div><p>在合同详情页确认合同信息及负责人后，点击“View Contract”打开合同</p><figure class="shot"><a href="assets/Z02.jpg" target="_blank" rel="noopener"><img src="assets/Z02.jpg" alt="PATH官方使用手册（User Manual）截图：合同详情" loading="lazy"></a><figcaption>PATH官方使用手册（User Manual）截图：合同详情</figcaption></figure></li><li><div class="fs-head"><span class="fs-no">3</span><b>签署</b></div><p>点击合同下方签名栏的“Click here”。导入（Import）已登记的印章图片或在签名栏直接签名后确认</p><figure class="shot"><a href="assets/Z03.jpg" target="_blank" rel="noopener"><img src="assets/Z03.jpg" alt="PATH官方使用手册（User Manual）截图：电子签名" loading="lazy"></a><figcaption>PATH官方使用手册（User Manual）截图：电子签名</figcaption></figure></li><li><div class="fs-head"><span class="fs-no">4</span><b>签署完成</b></div><p>双方签署完成后合同即确定，签署版以电子文件形式保存在PATH中。如需修改合同内容，可在签署前通过Electronic Seal菜单退回（Reject）</p><figure class="shot"><a href="assets/Z04.jpg" target="_blank" rel="noopener"><img src="assets/Z04.jpg" alt="PATH官方使用手册（User Manual）截图：合同退回说明" loading="lazy"></a><figcaption>PATH官方使用手册（User Manual）截图：合同退回说明</figcaption></figure></li></ol>
+<h2 id="c-letter">4. 领取参与确认函</h2>
+<p>如需向广告主证明参与试点，请向负责AM申请确认函。确认函以英文邮件形式开具，如不需要可省略</p>
+<ul><li>申请时需提供的信息：确认函上记载的法人正式名称、所需有效期（季度、半年、年度中选择）、使用目的</li><li>确认函仅证明参与试点的事实，不代表官方代理商认证或独家权限</li></ul>
+<details class="more"><summary>确认函示例（英文）</summary><pre class="letter">Subject: [NAVER] Confirmation of NAVER Pilot Program Participation_[Company]
+
+Dear [Company] Team,
+
+This letter serves to confirm that [Company legal name] has participated in the NAVER Partnership Pilot Program as part of a pilot collaboration initiative.
+
+During the pilot period, [Company legal name] has been provided with the same benefits, support, and collaboration opportunities typically offered under NAVER&#x27;s official partnership framework.
+
+We hereby confirm that the participation period is valid through [Month DD, YYYY].
+
+Please note that this confirmation is intended solely to verify participation in the pilot program and does not constitute an official partnership agreement, agency certification, or exclusive authorization beyond the scope of the pilot initiative.
+
+Best regards,
+NAVER Channel Consulting</pre></details>
+</article><div class="pn"><a class="pv" href="program_zh.html">‹ 代理商试点计划</a></div></main></div>
+<footer>政策和条件可能发生变化，最终以负责AM的说明为准。</footer></body></html>
