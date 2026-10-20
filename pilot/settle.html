@@ -1,0 +1,226 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>정산 · 파일럿 파트너사 가이드</title><style>
+@font-face{font-family:"NSNeo";font-weight:300;src:url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.woff) format("woff")}
+@font-face{font-family:"NSNeo";font-weight:400;src:url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.woff) format("woff")}
+@font-face{font-family:"NSNeo";font-weight:700;src:url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff) format("woff")}
+@font-face{font-family:"NSNeo";font-weight:800;src:url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.woff) format("woff")}
+@font-face{font-family:"NSNeo";font-weight:900;src:url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.woff) format("woff")}
+:root{--g:#03C75A;--gd:#028A3F;--gl:#E9F9F0;--gm:#BDEBD1;--ink:#1B1F23;--sub:#5B6470;--line:#E3E7EB;--bg:#F6F8F7;--nv:#EEF3FF;--nvd:#2F54C8;--warn:#FFF7E0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;word-break:keep-all;overflow-wrap:anywhere;font:16px/1.7 "NSNeo","NanumSquare Neo","Pretendard","Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--gd)}
+.top{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:14px;padding:12px 24px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:17px;color:var(--ink);text-decoration:none}
+.logo i{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:6px;background:var(--g);color:#fff;font-style:normal;font-weight:900}
+.top .sp{flex:1}.top .ask{font-size:14px;color:var(--sub)}
+.wrap{display:grid;grid-template-columns:250px minmax(0,1fr);max-width:1180px;margin:0 auto;gap:32px;padding:28px 24px 80px}
+nav.side{position:sticky;top:76px;align-self:start}
+nav.side h5{margin:0 0 8px;font-size:12px;color:var(--sub);letter-spacing:.04em}
+nav.side ul{list-style:none;margin:0;padding:0}
+nav.side li>a,nav.side li>span{display:flex;justify-content:space-between;padding:8px 12px;border-radius:8px;text-decoration:none;color:var(--ink);font-weight:600;font-size:15px}
+nav.side li>a:hover{background:var(--gl)}
+nav.side li.on>a{background:var(--gl);color:var(--gd)}
+nav.side li>span{color:#A0A8B0;font-weight:500}nav.side li>span small{font-size:11px;border:1px solid var(--line);border-radius:999px;padding:0 7px}
+nav.side ol{list-style:none;margin:2px 0 8px;padding:0 0 0 14px;border-left:2px solid var(--gm)}
+nav.side ol a{display:block;padding:4px 10px;font-size:14px;color:var(--sub);text-decoration:none}nav.side ol a:hover{color:var(--gd)}
+main article{background:#fff;border:1px solid var(--line);border-radius:14px;padding:34px 40px;margin-bottom:28px;scroll-margin-top:80px}
+.crumb{font-size:13px;color:var(--sub);margin-bottom:6px}.crumb b{color:var(--gd);font-weight:600}
+h1{font-size:30px;margin:0 0 10px;letter-spacing:-.02em}
+h2{font-size:21px;margin:38px 0 12px;padding-top:6px;scroll-margin-top:84px}
+h3{margin:0;font-size:18px}h4{margin:0 0 10px;font-size:15px}
+.lead{font-size:17.5px;color:#333;margin:0 0 18px}
+.small{font-size:13.5px;color:var(--sub)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:8px 0 6px}
+.facts div{border:1px solid var(--gm);background:var(--gl);border-radius:12px;padding:14px 16px}
+.facts em{display:block;font-style:normal;font-size:12.5px;color:var(--gd);font-weight:700}
+.facts b{display:block;font-size:18px;margin:2px 0}.facts small{color:var(--sub);font-size:13px}
+.note{border-radius:10px;padding:12px 16px;margin:16px 0;font-size:15px}
+.note.info{background:var(--warn);border:1px solid #F2DB9A}
+/* 두 줄 흐름도 */
+.lf{display:grid;grid-template-columns:76px repeat(var(--cols),minmax(0,1fr));grid-template-rows:auto auto auto;grid-auto-flow:column;gap:8px;margin:14px 0 6px;align-items:stretch}.lf-col{display:contents}
+.lf-label{display:flex;align-items:center;font-size:13px;font-weight:800;color:var(--gd)}.lf-label.nv{color:var(--nvd)}
+.lf-step{position:relative;background:var(--g);color:#fff;border-radius:10px;padding:10px 10px;font-weight:700;display:flex;gap:8px;align-items:center}
+.lf-step:not(:last-child)::after{content:"";position:absolute;right:-9px;top:50%;width:0;height:0;border:7px solid transparent;border-left-color:var(--g);transform:translateY(-50%);z-index:2}
+.lf-no{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#fff;color:var(--gd);font-size:12.5px;flex:none}
+.lf-title{font-size:14px;line-height:1.3}a.lf-step{text-decoration:none;transition:background .15s}a.lf-step:hover{background:var(--gd)}a.lf-step:hover::after{border-left-color:var(--gd)}.lf-go{margin-left:auto;font-size:18px;line-height:1;opacity:.8}section.step{scroll-margin-top:72px}section.step:target{box-shadow:0 0 0 3px var(--gm)}.lf-hint{font-size:13px;color:var(--sub);margin:4px 0 0}
+.lf-cell{border:1px solid var(--gm);background:var(--gl);border-radius:10px;padding:10px 12px;font-size:14px;line-height:1.45}
+.lf-cell.nv{border-color:#C9D6FA;background:var(--nv)}
+.lf-cell.empty{background:#fff;border-style:dashed;color:#B5BCC4;text-align:center}
+.after{margin:10px 0 0;font-size:14.5px;color:var(--sub)}
+a.soon{color:var(--sub);text-decoration:none;border-bottom:1px dashed}
+/* 가로 체인 */
+ol.chain{list-style:none;display:flex;gap:10px;margin:14px 0 6px;padding:0;counter-reset:c}
+ol.chain li{position:relative;flex:1;background:#fff;border:1.5px solid var(--g);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:2px}
+ol.chain li:not(:last-child)::after{content:"";position:absolute;right:-12px;top:50%;width:12px;height:2px;background:var(--g)}
+.ch-no{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--g);color:#fff;font-weight:800;font-size:13px;margin-bottom:4px}
+ol.chain b{font-size:15px}ol.chain small{color:var(--sub);font-size:13px;line-height:1.4}
+.ch-note{font-size:13.5px;color:var(--sub);margin:4px 0 0}
+/* 단계 카드 */
+section.step{border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:14px 0;scroll-margin-top:84px}
+section.step header{display:flex;align-items:center;gap:10px;flex-wrap:wrap}section.step header h3{margin-right:auto}.ask-chip{font-size:13px;color:var(--sub);background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:4px 12px}.ask-chip em{font-style:normal;font-weight:700;color:var(--gd);margin-right:6px}section.step{margin-top:14px}
+.step-no{display:inline-grid;place-items:center;min-width:30px;height:30px;padding:0 8px;border-radius:999px;background:var(--gl);color:var(--gd);font-weight:800}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin:10px 0 6px;font-size:13.5px;color:var(--sub)}
+.meta em{font-style:normal;font-weight:700;color:var(--gd);margin-right:5px}
+section.step ul{padding-left:20px;margin:8px 0}section.step li{margin:4px 0}
+.help-box{border:1px solid #C9D6FA;background:var(--nv);border-radius:12px;padding:16px 20px;margin:18px 0 6px}
+.help-box h4{color:var(--nvd)}
+.help-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.help-grid div{background:#fff;border-radius:8px;padding:10px 12px;font-size:14.5px}
+.help-grid em{display:block;font-style:normal;font-size:12.5px;color:var(--sub);font-weight:700}
+.files{margin:14px 0 4px}
+a.file{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:10px;padding:9px 14px;margin:0 8px 8px 0;text-decoration:none;color:var(--ink)}
+a.file:hover{border-color:var(--g)}
+.file-ic{background:#E5484D;color:#fff;font-size:11px;font-weight:800;border-radius:4px;padding:3px 6px}
+a.file b{display:block;font-size:14.5px}a.file small{color:var(--sub);font-size:12.5px}
+details.more{margin-top:12px;border-top:1px dashed var(--line);padding-top:10px}
+details.more>summary{cursor:pointer;color:var(--gd);font-weight:700;font-size:14.5px}
+.shots{display:grid;gap:14px;margin-top:12px}
+figure.shot{margin:12px 0 0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+figure.shot img{display:block;width:100%;height:auto}
+figure.shot figcaption{font-size:13.5px;color:var(--sub);padding:8px 12px;border-top:1px solid var(--line)}
+.tbl{overflow-x:auto;margin:10px 0}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+th,td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+th{background:var(--bg);font-size:13.5px}td:first-child{font-weight:700;white-space:nowrap}
+.mono{font-family:"NSNeo",sans-serif;font-weight:700;font-size:13.5px;background:var(--bg);border-radius:8px;padding:10px 12px}
+pre.letter{white-space:pre-wrap;font:13.5px/1.7 "NSNeo",sans-serif;background:var(--bg);border-radius:8px;padding:14px 16px}
+.nn{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--gm);color:var(--gd);font-size:11.5px;font-weight:800;margin-right:8px;flex:none}
+nav.side li>a{justify-content:flex-start;align-items:center}
+.facts.num div{position:relative;padding-left:58px}.fn{position:absolute;left:16px;top:16px;width:30px;height:30px;border-radius:50%;background:var(--g);color:#fff;display:grid;place-items:center;font-weight:800}
+.facts.num b{font-size:17px}.facts:not(.num){grid-template-columns:repeat(2,1fr)}
+.prep{background:var(--bg);border-radius:10px;padding:12px 16px;margin:10px 0}.prep h4{margin:0 0 4px;color:var(--gd);font-size:14px}.prep ul{margin:4px 0}
+h3.sub{font-size:17px;margin:26px 0 8px}
+ol.plain{padding-left:22px}ol.plain li{margin:6px 0}
+.hub a.soon{opacity:.55;pointer-events:none}.hub{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;margin:18px 0}
+.hub a{display:flex;flex-direction:column;gap:4px;border:1px solid var(--line);border-radius:12px;padding:16px 18px;text-decoration:none;color:var(--ink)}
+.hub a:hover{border-color:var(--g);box-shadow:0 2px 10px rgba(3,199,90,.12)}.hub b{font-size:16.5px}.hub small{color:var(--sub);font-size:13.5px}
+.pn{display:flex;justify-content:space-between;gap:12px;margin:-8px 0 20px}.pn a{border:1px solid var(--line);background:#fff;border-radius:10px;padding:10px 16px;text-decoration:none;font-weight:700}.pn .nx{margin-left:auto}
+.crumb a{color:var(--sub);text-decoration:none}
+.tree{border:1px solid var(--line);border-radius:12px;padding:18px;margin:12px 0;text-align:center}
+.tree b{display:block}.tree small{display:block;color:var(--sub);font-size:13px}
+.t-top{display:inline-block;background:var(--g);color:#fff;border-radius:10px;padding:10px 22px}.t-top small{color:#E6FFF0}
+.t-line{width:2px;height:18px;background:var(--g);margin:0 auto}
+.t-kids{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;border-top:2px solid var(--g);padding-top:14px}
+.t-kids div{background:var(--gl);border:1px solid var(--gm);border-radius:10px;padding:10px}
+.t-foot{margin-top:12px;font-size:14px;color:var(--sub)}.t-foot b{display:inline;color:var(--ink)}
+.levels{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}
+.lv{border:1px solid var(--line);border-radius:12px;padding:14px 16px}.lv h4{color:var(--gd)}
+.lv ol{list-style:none;margin:0;padding:0}.lv li{position:relative;border-left:3px solid var(--g);margin:0 0 8px 8px;padding:6px 12px;background:var(--gl);border-radius:0 8px 8px 0}
+.lv li:nth-child(2){margin-left:24px}.lv li:nth-child(3){margin-left:40px}.lv li b{display:block}.lv li small{color:var(--sub);font-size:13px}
+table.cmp td:first-child{color:var(--gd)}table.cmp th:not(:first-child){background:var(--gl);color:var(--gd)}
+.file-ic.doc{background:#2B579A}.file-ic.xls{background:#217346}
+.inv{border:1px solid #c9d3cf;border-radius:8px;padding:18px 22px;font-size:14px;background:#fff;max-width:640px}.inv h4{font-size:18px}.inv table td:first-child{white-space:normal}.inv .r{text-align:right}.inv .muted{color:var(--sub)}
+ol.figsteps{list-style:none;padding:0;margin:14px 0}
+ol.figsteps>li{border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:0 0 12px}
+.fs-head{display:flex;align-items:center;gap:10px}.fs-head b{font-size:16px}
+.fs-no{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--g);color:#fff;font-weight:800;font-size:13.5px;flex:none}
+ol.figsteps p{margin:8px 0 0}
+ul.check{list-style:none;padding:0;margin:12px 0;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+ul.check li{position:relative;border:1px solid var(--gm);background:var(--gl);border-radius:10px;padding:10px 12px 10px 40px}
+ul.check li::before{content:"";position:absolute;left:12px;top:12px;width:16px;height:16px;border:2px solid var(--g);border-radius:4px;background:#fff}
+ul.check b{display:block;font-size:14.5px}ul.check span{font-size:13.5px;color:var(--sub)}
+details.opt{border:1px solid var(--line);border-radius:12px;margin:10px 0;padding:0}
+details.opt>summary{cursor:pointer;padding:14px 18px;font-weight:700;font-size:16px;list-style:none}
+details.opt>summary::-webkit-details-marker{display:none}details.opt>summary::after{content:" ▾";color:var(--sub)}
+details.opt[open]>summary{border-bottom:1px solid var(--line)}
+.tag{display:inline-block;font-size:12px;font-weight:700;color:var(--nvd);background:var(--nv);border-radius:999px;padding:2px 9px;margin-right:8px}
+.opt-body{padding:6px 18px 14px}
+footer{max-width:1180px;margin:0 auto;padding:0 24px 40px;font-size:13px;color:var(--sub)}
+@media(max-width:900px){.top .ask{display:none}.logo{white-space:nowrap}.wrap{grid-template-columns:1fr;padding:16px}nav.side{position:static}main article{padding:22px 18px}
+.facts,.facts.num,.facts:not(.num),.help-grid,.levels,.t-kids,ul.check{grid-template-columns:1fr}
+.lf{display:block}.lf-col{display:block;margin-bottom:12px}.lf-labels{display:none}.lf-step::after{display:none}.lf-col .lf-cell{margin-top:6px}.lf-cell.pt::before{content:"파트너사 · ";font-weight:800;color:var(--gd)}.lf-cell.nv::before{content:"네이버 · ";font-weight:800;color:var(--nvd)}.lf-cell.empty{display:none}
+ol.chain{flex-direction:column}ol.chain li:not(:last-child)::after{right:auto;left:26px;top:auto;bottom:-10px;width:2px;height:10px}}
+
+/* ---- 도식 리디자인: 셰브런 단계 + 헤더 바 블록 ---- */
+.lf{column-gap:4px;row-gap:6px}
+.lf-label{justify-content:center;background:var(--g);color:#fff;border-radius:4px;font-size:13.5px;letter-spacing:.02em}
+.lf-label.nv{background:var(--nvd);color:#fff}
+.lf-step{background:#D6F7E6;color:#0B3B24;border-radius:0;min-height:60px;padding:10px 18px 10px 24px;gap:6px;
+  clip-path:polygon(0 0,calc(100% - 16px) 0,100% 50%,calc(100% - 16px) 100%,0 100%,16px 50%)}
+.lf-col:nth-child(2) .lf-step{padding-left:12px;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 50%,calc(100% - 16px) 100%,0 100%)}
+.lf-step:not(:last-child)::after{display:none}
+.lf-no{background:var(--g);color:#fff}
+.lf-title{font-weight:800;font-size:14px;word-break:keep-all}
+a.lf-step{color:#0B3B24}a.lf-step:hover{background:var(--g);color:#fff}a.lf-step:hover .lf-no{background:#fff;color:var(--gd)}
+.lf-go{display:none}
+.lf-cell{border:0;border-radius:4px;background:#EEFAF3;font-size:14px}
+.lf-cell.nv{border:0;background:#EEF3FF}
+.lf-cell.empty{background:transparent;border:1px dashed #DDE3E8}
+ol.chain{gap:4px}
+ol.chain li{background:#D6F7E6;border:0;border-radius:0;padding:14px 30px 14px 32px;
+  clip-path:polygon(0 0,calc(100% - 16px) 0,100% 50%,calc(100% - 16px) 100%,0 100%,16px 50%)}
+ol.chain li:first-child{padding-left:18px;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 50%,calc(100% - 16px) 100%,0 100%)}
+ol.chain li:last-child{background:#8EF0C0}
+ol.chain li:not(:last-child)::after{display:none}
+ol.chain b{font-weight:800;color:#0B3B24}ol.chain small{color:#3C5A4B}
+.facts.num div{background:#fff;border:1px solid var(--line);border-top:4px solid var(--g);border-radius:6px;padding:20px 18px 20px 62px;display:flex;align-items:center;min-height:76px}
+.facts.num b{font-size:17px;font-weight:800;margin:0}.facts.num .fn{top:50%;transform:translateY(-50%)}
+.note.warn{background:#FFF3F2;border:1px solid #F6CBC7;border-left:4px solid #E5534B}
+.warn-tag{display:inline-block;background:#E5534B;color:#fff;font-size:12.5px;border-radius:4px;padding:1px 8px;margin-right:10px;vertical-align:1px}
+h1,h2,h3,h4,b,strong{font-weight:800}.lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:2px;margin-right:14px;font-size:13px}.lang a{padding:3px 12px;border-radius:999px;text-decoration:none;color:var(--sub);font-weight:700}.lang a.on{background:var(--g);color:#fff}svg.lock{vertical-align:-1px;margin-right:4px}a.ch-link{display:flex;flex-direction:column;gap:2px;color:inherit;text-decoration:none}ol.chain li:has(a.ch-link):hover{background:var(--g)}ol.chain li:has(a.ch-link):hover b,ol.chain li:has(a.ch-link):hover small{color:#fff}h2[id^=c-]{scroll-margin-top:72px}a.term{color:inherit;text-decoration:underline dotted var(--g);text-underline-offset:3px;text-decoration-thickness:2px}a.term:hover{color:var(--gd)}ul.cond{margin:0;padding-left:18px}ul.cond li{margin:2px 0}.warn-tag.sm{font-size:11.5px;padding:0 6px;margin-right:6px}dl.gloss{margin:8px 0}dl.gloss>div{border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:0 0 10px;scroll-margin-top:72px}dl.gloss>div:target{border-color:var(--g);box-shadow:0 0 0 3px var(--gm)}dl.gloss dt{font-weight:800;font-size:16.5px}dl.gloss dt small{font-weight:400;color:var(--sub);margin-left:8px;font-size:13px}dl.gloss dd{margin:6px 0 0}
+@media(max-width:900px){
+.lf-step,.lf-col:nth-child(2) .lf-step,ol.chain li,ol.chain li:first-child{clip-path:none;border-radius:8px;padding:12px 16px}
+.lf-cell{border-radius:6px}
+}
+</style></head><body>
+<div class="top"><a class="logo" href="index.html"><i>N</i>파일럿 파트너사 가이드</a><span class="sp"></span><span class="ask">문의 <a href="mailto:dl_adpartner_global@navercorp.com">dl_adpartner_global@navercorp.com</a></span></div>
+<div class="wrap"><nav class="side"><h5>가이드 목차</h5><ul><li><a href="program.html"><span class="nn">1</span>에이전시 파일럿 프로그램</a></li><li><a href="contract.html"><span class="nn">2</span>계약</a></li><li><a href="register.html"><span class="nn">3</span>파트너사 등록</a></li><li><a href="ops.html"><span class="nn">4</span>광고 운영</a></li><li class="on"><a href="settle.html"><span class="nn">5</span>정산</a><ol><li><a href="#s-doc">세금계산서와 인보이스</a></li><li><a href="#s-charge">1. 광고비 충전</a></li><li><a href="#s-run">2. 광고 집행</a></li><li><a href="#s-fee">3. 수수료 정산</a></li></ol></li><li><a href="glossary.html"><span class="nn">Aa</span>용어 사전</a></li></ul></nav><main><article><div class="crumb"><a href="index.html">파일럿 파트너사 가이드</a> › <b>정산</b></div><h1>정산</h1><p class="lead">정산은 광고비 충전, 광고 집행, 수수료 정산 순서로 진행. 광고비는 미리 충전해 사용하고, 파트너사 수수료는 다음 달에 인보이스를 제출해 지급</p>
+<ol class="chain"><li><a class="ch-link" href="#s-charge"><span class="ch-no">1</span><b>광고비 충전</b><small>광고 계정 비즈머니에 미리</small></a></li><li><a class="ch-link" href="#s-run"><span class="ch-no">2</span><b>광고 집행</b><small>쓴 만큼 비즈머니에서 차감</small></a></li><li><a class="ch-link" href="#s-fee"><span class="ch-no">3</span><b>수수료 정산</b><small>다음 달 인보이스 제출 · 외화 지급</small></a></li></ol>
+<div class="help-box"><h4>이 단계에서 막히면</h4><div class="help-grid"><div><em>외화 충전 인보이스 · 수수료 인보이스</em>파트너사지원 <a href="mailto:agency_cs@navercorp.com">agency_cs@navercorp.com</a></div><div><em>외화 입금 확인</em><a href="https://nsf.navercorp.com/home" target="_blank" rel="noopener">NSF(서비스광장)</a> › 통합광고_파트너사지원 › 해외광고주</div><div><em>해외 카드 충전 문제</em><a href="mailto:searchad.agreement@navercorp.com">searchad.agreement@navercorp.com</a></div><div><em>정산 금액 · 일정</em>담당 AM (참조 <a href="mailto:dl_adpartner_global@navercorp.com">dl_adpartner_global@navercorp.com</a>)</div></div></div>
+<h2 id="s-doc">세금계산서와 인보이스</h2>
+<p>국내 광고주와 파트너사는 세금계산서를 사용하지만, 해외 광고주 계정과 해외 파트너사는 부가세 없이 처리되어 세금계산서 대신 인보이스 사용</p>
+<div class="tbl"><table class="cmp"><thead><tr><th></th><th>세금계산서</th><th>인보이스</th></tr></thead><tbody><tr><td>사용 대상</td><td>국내 광고주 · 국내 파트너사</td><td>해외 광고주 계정 · 해외 파트너사 (파일럿)</td></tr><tr><td>광고비</td><td>네이버가 광고주에게 매달 발행</td><td>외화 송금 충전 시 네이버가 충전용 인보이스 발행</td></tr><tr><td>파트너사 수수료</td><td>네이버가 대신 발행(역발행)</td><td>파트너사가 <a class="term" href="glossary.html#invoice">수수료 인보이스</a>를 작성해 네이버에 제출</td></tr><tr><td>부가세</td><td>있음</td><td>없음 (해외 광고주 계정은 외화 계정으로 부가세 없이 과금)</td></tr></tbody></table></div>
+<h2 id="s-charge">1. 광고비 충전</h2>
+<p>광고비는 해외 카드 또는 외화 송금으로 <a class="term" href="glossary.html#bizmoney">비즈머니</a>에 충전. 충전 전에 해당 광고 계정의 <a class="term" href="glossary.html#agency-right">대행권</a>이 파트너사로 이관되었는지 확인</p>
+<div class="tbl"><table class=""><thead><tr><th>방법</th><th>충전 절차</th><th>반영 시점</th></tr></thead><tbody><tr><td>해외 카드</td><td>광고 계정 › 결제 › 비즈머니 관리 › 충전하기에서 해외카드를 고르고 결제 (Visa, Master, JCB 인증 서비스 가입 카드)</td><td>즉시</td></tr><tr><td>외화 송금</td><td>파트너사지원에 인보이스 요청 → 인보이스의 우리은행 외화 가상계좌로 같은 통화 · 같은 금액 송금 → 늦어지면 NSF에 입금 확인 요청</td><td>보통 2주, 길게는 4주</td></tr></tbody></table></div>
+<ol class="figsteps"><li><div class="fs-head"><span class="fs-no">1</span><b>비즈머니 관리에서 충전</b></div><p>결제 › 비즈머니 관리에서 ‘충전하기’를 눌러 충전. 외화로 충전해도 잔액은 원화로 표시</p><figure class="shot"><a href="assets/S01.jpg" target="_blank" rel="noopener"><img src="assets/S01.jpg" alt="결제 › 비즈머니 관리" loading="lazy"></a><figcaption>결제 › 비즈머니 관리</figcaption></figure></li><li><div class="fs-head"><span class="fs-no">2</span><b>입금 계좌 확인</b></div><p>외화 송금 계좌는 결제 › 결제 설정의 입금 계좌에서도 확인 가능. 광고 계정마다 계좌번호가 달라 반드시 해당 계정 인보이스에 기재된 번호 사용</p><figure class="shot"><a href="assets/S02.jpg" target="_blank" rel="noopener"><img src="assets/S02.jpg" alt="결제 › 결제 설정의 입금 계좌" loading="lazy"></a><figcaption>결제 › 결제 설정의 입금 계좌</figcaption></figure></li></ol>
+<ul class="cond"><li>송금 시 받는 사람 이름은 인보이스에 기재된 ‘NAVER(인보이스 번호)’ 그대로 입력</li><li><b class="warn-tag sm">주의</b>원화로 환전해 송금하면 충전 불가</li><li>지원 통화: USD, SGD, EUR, GBP, JPY, CNY, HKD, AUD, CAD</li><li>환불은 광고주에게만 가능하므로 예상 사용 금액에 맞춰 나눠 충전 권장</li></ul>
+<details class="more"><summary>인보이스 요청 메일 (영문)</summary><pre class="letter">To: agency_cs@navercorp.com (파트너사지원) / Cc: 담당 AM, dl_adpartner_global@navercorp.com
+Subject: [Agency] Request for foreign-currency charge invoice ([Ad account ID], [Currency] [Amount])
+
+We would like to request an invoice for a foreign-currency bizmoney top-up for the ad account below.
+(Agency authority for this account has been transferred to [Agency].)
+
+1. Ad account ID: [ID]
+2. Advertiser: [legal name]
+3. Amount to be remitted: [Currency] [Amount]
+4. Expected remittance date: [YYYY-MM-DD]
+5. Remitter: [Agency legal name] will remit the payment on behalf of the advertiser.
+
+Please send the invoice as a PDF. Thank you.</pre></details>
+<details class="more"><summary>입금 확인 요청 (NSF 등록 내용)</summary><pre class="letter">NSF &gt; 통합광고_파트너사지원 &gt; 해외광고주 &gt; 입금 확인 및 가상계좌 이체요청
+
+Title: [Agency] Deposit confirmation request ([Ad account ID], Invoice [No.])
+
+1. Ad account ID: [ID]
+2. Invoice number: [YYYYMMDD-NNNNNN]
+3. Remittance date: [YYYY-MM-DD]
+4. Amount and currency: [Currency] [Amount]
+5. Remitter: [Agency legal name] (on behalf of the advertiser)
+6. Beneficiary name used: NAVER([Invoice No.])
+
+Attachments: the invoice used (required), bank remittance advice</pre></details>
+<h2 id="s-run">2. 광고 집행</h2>
+<p>광고가 노출되거나 클릭되면 발생한 광고비가 비즈머니에서 차감. <b class="warn-tag sm">주의</b>잔액이 0원이 되면 광고가 중단되고 검수도 진행되지 않으므로 충전 내역과 잔액 수시 확인</p>
+<ol class="figsteps"><li><div class="fs-head"><span class="fs-no">1</span><b>충전 · 소진 내역 확인</b></div><p>결제 › 비즈머니 관리의 ‘충전 내역’과 ‘소진 내역’ 탭에서 기간별 사용 내역 확인</p><figure class="shot"><a href="assets/S01b.jpg" target="_blank" rel="noopener"><img src="assets/S01b.jpg" alt="결제 › 비즈머니 관리 › 충전 내역" loading="lazy"></a><figcaption>결제 › 비즈머니 관리 › 충전 내역</figcaption></figure></li></ol>
+<h2 id="s-fee">3. 수수료 정산</h2>
+<div class="tbl"><table class=""><thead><tr><th>시점</th><th>담당</th><th>할 일</th></tr></thead><tbody><tr><td>다음 달 첫 영업일</td><td>파트너사</td><td><a class="term" href="glossary.html#manager">관리 계정</a> › 결제 › <a class="term" href="glossary.html#statement">월별 정산서</a>에서 지난달 수수료 확인. 금액 문의는 4영업일 안에</td></tr><tr><td>다음 달 4~6일</td><td>파트너사</td><td>수수료 인보이스를 파트너사지원(agency_cs@navercorp.com)에 메일로 제출</td></tr><tr><td>제출 직후</td><td>네이버</td><td>정산서 금액과 인보이스 금액 대조. 다르면 수정 요청</td></tr><tr><td>다음 달 15일 무렵</td><td>네이버</td><td>등록된 해외 계좌로 외화 송금. 최대 3일 지연 가능</td></tr></tbody></table></div>
+<ol class="figsteps"><li><div class="fs-head"><span class="fs-no">1</span><b>월별 정산서 확인</b></div><p>관리 계정 › 결제 › 월별 정산서에서 정산 기준 금액과 수수료, 정산 일정 확인</p><figure class="shot"><a href="assets/P20.jpg" target="_blank" rel="noopener"><img src="assets/P20.jpg" alt="관리 계정 › 결제 › 월별 정산서" loading="lazy"></a><figcaption>관리 계정 › 결제 › 월별 정산서</figcaption></figure></li></ol>
+<h3 class="sub" id="s-invoice">수수료 인보이스 작성 방법</h3>
+<ul class="cond"><li>받는 곳(Bill To)은 NAVER Corp., 청구 금액은 월별 정산서의 수수료와 일치</li><li>여러 달의 수수료를 한 장에 청구할 때는 월별로 항목을 나눠 기재</li><li>수취 은행 정보는 등록 때 제출한 Registration Form과 동일하게, 법인 서명 또는 직인 포함</li><li>해외 파트너사는 세금계산서 발행과 원천징수 대상 아님</li></ul>
+<details class="more" open><summary>인보이스 견본</summary><div class="inv">
+<h4>INVOICE</h4>
+<div class="muted">[파트너사 법인명] · [주소]</div>
+<table>
+<tr><td><b>BILL TO</b><br />NAVER Corp.</td><td class="r"><b>INVOICE #</b> [파트너사 고유번호]<br /><b>DATE</b> [정산 대상월 말일]</td></tr>
+</table>
+<table>
+<tr><th>ITEM</th><th>DESCRIPTION</th><th class="r">AMOUNT (USD)</th></tr>
+<tr><td>NAVER AD</td><td>Naver Ads Agency Fee ([Month YYYY])</td><td class="r">[월별 정산서 금액]</td></tr>
+<tr><td></td><td><b>Total</b></td><td class="r"><b>[합계]</b></td></tr>
+</table>
+<div><b>Please remit payment to</b><br />Bank / Bank address / Account name(법인명과 동일) / Account number / SWIFT</div>
+<div class="muted" style="margin-top:8px">법인 서명 또는 직인</div>
+</div></details>
+<div class="note info">첫 달에 월별 정산서가 보이지 않으면 담당 AM에게 문의. 네이버 정산 설정이 완료되어야 정산서 확인 가능</div></article><div class="pn"><a class="pv" href="ops.html">‹ 광고 운영</a><a class="nx" href="glossary.html">용어 사전 ›</a></div></main></div>
+<footer>정책과 조건은 바뀔 수 있으며, 최종 기준은 담당 AM의 안내를 따릅니다.</footer></body></html>
