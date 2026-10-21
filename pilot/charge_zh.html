@@ -1,0 +1,206 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>광고비 충전 · 글로벌 파일럿 파트너사 가이드</title><style>
+@font-face{font-family:"NSNeo";font-weight:300;src:url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.woff) format("woff")}
+@font-face{font-family:"NSNeo";font-weight:400;src:url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.woff) format("woff")}
+@font-face{font-family:"NSNeo";font-weight:700;src:url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff) format("woff")}
+@font-face{font-family:"NSNeo";font-weight:800;src:url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.woff) format("woff")}
+@font-face{font-family:"NSNeo";font-weight:900;src:url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.woff) format("woff")}
+:root{--g:#03C75A;--gd:#028A3F;--gl:#E9F9F0;--gm:#BDEBD1;--ink:#1B1F23;--sub:#5B6470;--line:#E3E7EB;--bg:#F6F8F7;--nv:#EEF3FF;--nvd:#2F54C8;--warn:#FFF7E0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;word-break:keep-all;overflow-wrap:anywhere;font:16px/1.7 "NSNeo","NanumSquare Neo","Pretendard","Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--gd)}
+.top{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:14px;padding:12px 24px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:17px;color:var(--ink);text-decoration:none}
+.logo i{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:6px;background:var(--g);color:#fff;font-style:normal;font-weight:900}
+.top .sp{flex:1}.top .ask{font-size:14px;color:var(--sub)}
+.wrap{display:grid;grid-template-columns:250px minmax(0,1fr);max-width:1180px;margin:0 auto;gap:32px;padding:28px 24px 80px}
+nav.side{position:sticky;top:76px;align-self:start}
+nav.side h5{margin:0 0 8px;font-size:12px;color:var(--sub);letter-spacing:.04em}
+nav.side ul{list-style:none;margin:0;padding:0}
+nav.side li>a,nav.side li>span{display:flex;justify-content:space-between;padding:8px 12px;border-radius:8px;text-decoration:none;color:var(--ink);font-weight:600;font-size:15px}
+nav.side li>a:hover{background:var(--gl)}
+nav.side li.on>a{background:var(--gl);color:var(--gd)}
+nav.side li>span{color:#A0A8B0;font-weight:500}nav.side li>span small{font-size:11px;border:1px solid var(--line);border-radius:999px;padding:0 7px}
+nav.side ol{list-style:none;margin:2px 0 8px;padding:0 0 0 14px;border-left:2px solid var(--gm)}
+nav.side ol a{display:block;padding:4px 10px;font-size:14px;color:var(--sub);text-decoration:none}nav.side ol a:hover{color:var(--gd)}
+main article{background:#fff;border:1px solid var(--line);border-radius:14px;padding:34px 40px;margin-bottom:28px;scroll-margin-top:80px}
+.crumb{font-size:13px;color:var(--sub);margin-bottom:6px}.crumb b{color:var(--gd);font-weight:600}
+h1{font-size:30px;margin:0 0 10px;letter-spacing:-.02em}
+h2{font-size:21px;margin:38px 0 12px;padding-top:6px;scroll-margin-top:84px}
+h3{margin:0;font-size:18px}h4{margin:0 0 10px;font-size:15px}
+.lead{font-size:17.5px;color:#333;margin:0 0 18px}
+.small{font-size:13.5px;color:var(--sub)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:8px 0 6px}
+.facts div{border:1px solid var(--gm);background:var(--gl);border-radius:12px;padding:14px 16px}
+.facts em{display:block;font-style:normal;font-size:12.5px;color:var(--gd);font-weight:700}
+.facts b{display:block;font-size:18px;margin:2px 0}.facts small{color:var(--sub);font-size:13px}
+.note{border-radius:10px;padding:12px 16px;margin:16px 0;font-size:15px}
+.note.info{background:var(--warn);border:1px solid #F2DB9A}
+/* 두 줄 흐름도 */
+.lf{display:grid;grid-template-columns:76px repeat(var(--cols),minmax(0,1fr));grid-template-rows:repeat(var(--rows,3),auto);grid-auto-flow:column;gap:8px;margin:14px 0 6px;align-items:stretch}.lf-col{display:contents}
+.lf-label{display:flex;align-items:center;font-size:13px;font-weight:800;color:var(--gd)}.lf-label.nv{color:var(--nvd)}
+.lf-step{position:relative;background:var(--g);color:#fff;border-radius:10px;padding:10px 10px;font-weight:700;display:flex;gap:8px;align-items:center}
+.lf-step:not(:last-child)::after{content:"";position:absolute;right:-9px;top:50%;width:0;height:0;border:7px solid transparent;border-left-color:var(--g);transform:translateY(-50%);z-index:2}
+.lf-no{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#fff;color:var(--gd);font-size:12.5px;flex:none}
+.lf-title{font-size:14px;line-height:1.3}a.lf-step{text-decoration:none;transition:background .15s}a.lf-step:hover{background:var(--gd)}a.lf-step:hover::after{border-left-color:var(--gd)}.lf-go{margin-left:auto;font-size:18px;line-height:1;opacity:.8}section.step{scroll-margin-top:72px}section.step:target{box-shadow:0 0 0 3px var(--gm)}.lf-hint{font-size:13px;color:var(--sub);margin:4px 0 0}
+.lf-cell{border:1px solid var(--gm);background:var(--gl);border-radius:10px;padding:10px 12px;font-size:14px;line-height:1.45}
+.lf-cell.nv{border-color:#C9D6FA;background:var(--nv)}
+.lf-cell.empty{background:#fff;border-style:dashed;color:#B5BCC4;text-align:center}
+.after{margin:10px 0 0;font-size:14.5px;color:var(--sub)}
+a.soon{color:var(--sub);text-decoration:none;border-bottom:1px dashed}
+/* 가로 체인 */
+ol.chain{list-style:none;display:flex;gap:10px;margin:14px 0 6px;padding:0;counter-reset:c}
+ol.chain li{position:relative;flex:1;background:#fff;border:1.5px solid var(--g);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:2px}
+ol.chain li:not(:last-child)::after{content:"";position:absolute;right:-12px;top:50%;width:12px;height:2px;background:var(--g)}
+.ch-no{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--g);color:#fff;font-weight:800;font-size:13px;margin-bottom:4px}
+ol.chain b{font-size:15px}ol.chain small{color:var(--sub);font-size:13px;line-height:1.4}
+.ch-note{font-size:13.5px;color:var(--sub);margin:4px 0 0}
+/* 단계 카드 */
+section.step{border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:14px 0;scroll-margin-top:84px}
+section.step header{display:flex;align-items:center;gap:10px;flex-wrap:wrap}section.step header h3{margin-right:auto}.ask-chip{font-size:13px;color:var(--sub);background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:4px 12px}.ask-chip em{font-style:normal;font-weight:700;color:var(--gd);margin-right:6px}section.step{margin-top:14px}
+.step-no{display:inline-grid;place-items:center;min-width:30px;height:30px;padding:0 8px;border-radius:999px;background:var(--gl);color:var(--gd);font-weight:800}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin:10px 0 6px;font-size:13.5px;color:var(--sub)}
+.meta em{font-style:normal;font-weight:700;color:var(--gd);margin-right:5px}
+section.step ul{padding-left:20px;margin:8px 0}section.step li{margin:4px 0}
+.help-box{border:1px solid #C9D6FA;background:var(--nv);border-radius:12px;padding:16px 20px;margin:18px 0 6px}
+.help-box h4{color:var(--nvd)}
+.help-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.help-grid div{background:#fff;border-radius:8px;padding:10px 12px;font-size:14.5px}
+.help-grid em{display:block;font-style:normal;font-size:12.5px;color:var(--sub);font-weight:700}
+.files{margin:14px 0 4px}
+a.file{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:10px;padding:9px 14px;margin:0 8px 8px 0;text-decoration:none;color:var(--ink)}
+a.file:hover{border-color:var(--g)}
+.file-ic{background:#E5484D;color:#fff;font-size:11px;font-weight:800;border-radius:4px;padding:3px 6px}
+a.file b{display:block;font-size:14.5px}a.file small{color:var(--sub);font-size:12.5px}
+details.more{margin-top:12px;border-top:1px dashed var(--line);padding-top:10px}
+details.more>summary{cursor:pointer;color:var(--gd);font-weight:700;font-size:14.5px}
+.shots{display:grid;gap:14px;margin-top:12px}
+figure.shot{margin:12px 0 0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+figure.shot img{display:block;width:100%;height:auto}
+figure.shot figcaption{font-size:13.5px;color:var(--sub);padding:8px 12px;border-top:1px solid var(--line)}
+.tbl{overflow-x:auto;margin:10px 0}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+th,td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+th{background:var(--bg);font-size:13.5px}td:first-child{font-weight:700;white-space:nowrap}
+.mono{font-family:"NSNeo",sans-serif;font-weight:700;font-size:13.5px;background:var(--bg);border-radius:8px;padding:10px 12px}
+pre.letter{white-space:pre-wrap;font:13.5px/1.7 "NSNeo",sans-serif;background:var(--bg);border-radius:8px;padding:14px 16px}
+.nn{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--gm);color:var(--gd);font-size:11.5px;font-weight:800;margin-right:8px;flex:none}
+nav.side li>a{justify-content:flex-start;align-items:center}
+.facts.num div{position:relative;padding-left:58px}.fn{position:absolute;left:16px;top:16px;width:30px;height:30px;border-radius:50%;background:var(--g);color:#fff;display:grid;place-items:center;font-weight:800}
+.facts.num b{font-size:17px}.facts:not(.num){grid-template-columns:repeat(2,1fr)}
+.prep{background:var(--bg);border-radius:10px;padding:12px 16px;margin:10px 0}.prep h4{margin:0 0 4px;color:var(--gd);font-size:14px}.prep ul{margin:4px 0}
+h3.sub{font-size:17px;margin:26px 0 8px}
+ol.plain{padding-left:22px}ol.plain li{margin:6px 0}
+.hub a.soon{opacity:.55;pointer-events:none}.hub{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;margin:18px 0}
+.hub a{display:flex;flex-direction:column;gap:4px;border:1px solid var(--line);border-radius:12px;padding:16px 18px;text-decoration:none;color:var(--ink)}
+.hub a:hover{border-color:var(--g);box-shadow:0 2px 10px rgba(3,199,90,.12)}.hub b{font-size:16.5px}.hub small{color:var(--sub);font-size:13.5px}
+.pn{display:flex;justify-content:space-between;gap:12px;margin:-8px 0 20px}.pn a{border:1px solid var(--line);background:#fff;border-radius:10px;padding:10px 16px;text-decoration:none;font-weight:700}.pn .nx{margin-left:auto}
+.crumb a{color:var(--sub);text-decoration:none}
+.tree{border:1px solid var(--line);border-radius:12px;padding:18px;margin:12px 0;text-align:center}
+.tree b{display:block}.tree small{display:block;color:var(--sub);font-size:13px}
+.t-top{display:inline-block;background:var(--g);color:#fff;border-radius:10px;padding:10px 22px}.t-top small{color:#E6FFF0}
+.t-line{width:2px;height:18px;background:var(--g);margin:0 auto}
+.t-kids{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;border-top:2px solid var(--g);padding-top:14px}
+.t-kids div{background:var(--gl);border:1px solid var(--gm);border-radius:10px;padding:10px}
+.t-foot{margin-top:12px;font-size:14px;color:var(--sub)}.t-foot b{display:inline;color:var(--ink)}
+.levels{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}
+.lv{border:1px solid var(--line);border-radius:12px;padding:14px 16px}.lv h4{color:var(--gd)}
+.lv ol{list-style:none;margin:0;padding:0}.lv li{position:relative;border-left:3px solid var(--g);margin:0 0 8px 8px;padding:6px 12px;background:var(--gl);border-radius:0 8px 8px 0}
+.lv li:nth-child(2){margin-left:24px}.lv li:nth-child(3){margin-left:40px}.lv li b{display:block}.lv li small{color:var(--sub);font-size:13px}
+table.cmp td:first-child{color:var(--gd)}table.cmp th:not(:first-child){background:var(--gl);color:var(--gd)}
+.file-ic.doc{background:#2B579A}.file-ic.xls{background:#217346}
+.inv{border:1px solid #c9d3cf;border-radius:8px;padding:18px 22px;font-size:14px;background:#fff;max-width:640px}.inv h4{font-size:18px}.inv table td:first-child{white-space:normal}.inv .r{text-align:right}.inv .muted{color:var(--sub)}
+ol.figsteps{list-style:none;padding:0;margin:14px 0}
+ol.figsteps>li{border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:0 0 12px}
+.fs-head{display:flex;align-items:center;gap:10px}.fs-head b{font-size:16px}
+.fs-no{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--g);color:#fff;font-weight:800;font-size:13.5px;flex:none}
+ol.figsteps p{margin:8px 0 0}
+ul.check{list-style:none;padding:0;margin:12px 0;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+ul.check li{position:relative;border:1px solid var(--gm);background:var(--gl);border-radius:10px;padding:10px 12px 10px 40px}
+ul.check li::before{content:"";position:absolute;left:12px;top:12px;width:16px;height:16px;border:2px solid var(--g);border-radius:4px;background:#fff}
+ul.check b{display:block;font-size:14.5px}ul.check span{font-size:13.5px;color:var(--sub)}
+details.opt{border:1px solid var(--line);border-radius:12px;margin:10px 0;padding:0}
+details.opt>summary{cursor:pointer;padding:14px 18px;font-weight:700;font-size:16px;list-style:none}
+details.opt>summary::-webkit-details-marker{display:none}details.opt>summary::after{content:" ▾";color:var(--sub)}
+details.opt[open]>summary{border-bottom:1px solid var(--line)}
+.tag{display:inline-block;font-size:12px;font-weight:700;color:var(--nvd);background:var(--nv);border-radius:999px;padding:2px 9px;margin-right:8px}
+.opt-body{padding:6px 18px 14px}
+footer{max-width:1180px;margin:0 auto;padding:0 24px 40px;font-size:13px;color:var(--sub)}
+@media(max-width:900px){.top .ask{display:none}.logo{white-space:nowrap}.wrap{grid-template-columns:1fr;padding:16px}nav.side{position:static}main article{padding:22px 18px}
+.facts,.facts.num,.facts:not(.num),.help-grid,.levels,.t-kids,ul.check{grid-template-columns:1fr}
+.lf{display:block}.lf-col{display:block;margin-bottom:12px}.lf-labels{display:none}.lf-step::after{display:none}.lf-col .lf-cell{margin-top:6px}.lf-cell.pt::before{content:attr(data-l);font-weight:800;color:var(--gd)}.lf-cell.nv::before{content:attr(data-l);font-weight:800;color:var(--nvd)}.lf-cell.empty{display:none}
+ol.chain{flex-direction:column}ol.chain li:not(:last-child)::after{right:auto;left:26px;top:auto;bottom:-10px;width:2px;height:10px}}
+
+/* ---- 도식 리디자인: 셰브런 단계 + 헤더 바 블록 ---- */
+.lf{column-gap:4px;row-gap:6px}
+.lf-label{justify-content:center;background:var(--g);color:#fff;border-radius:4px;font-size:13.5px;letter-spacing:.02em}
+.lf-label.nv{background:var(--nvd);color:#fff}
+.lf-step{background:#D6F7E6;color:#0B3B24;border-radius:0;min-height:60px;padding:10px 18px 10px 24px;gap:6px;
+  clip-path:polygon(0 0,calc(100% - 16px) 0,100% 50%,calc(100% - 16px) 100%,0 100%,16px 50%)}
+.lf-col:nth-child(2) .lf-step{padding-left:12px;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 50%,calc(100% - 16px) 100%,0 100%)}
+.lf-step:not(:last-child)::after{display:none}
+.lf-no{background:var(--g);color:#fff}
+.lf-title{font-weight:800;font-size:14px;word-break:keep-all}
+a.lf-step{color:#0B3B24}a.lf-step:hover{background:var(--g);color:#fff}a.lf-step:hover .lf-no{background:#fff;color:var(--gd)}
+.lf-go{display:none}
+.lf-cell{border:0;border-radius:4px;background:#EEFAF3;font-size:14px}
+.lf-cell.nv{border:0;background:#EEF3FF}
+.lf-cell.empty{background:transparent;border:1px dashed #DDE3E8}
+ol.chain{gap:4px}
+ol.chain li{background:#D6F7E6;border:0;border-radius:0;padding:14px 30px 14px 32px;
+  clip-path:polygon(0 0,calc(100% - 16px) 0,100% 50%,calc(100% - 16px) 100%,0 100%,16px 50%)}
+ol.chain li:first-child{padding-left:18px;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 50%,calc(100% - 16px) 100%,0 100%)}
+ol.chain li:last-child{background:#8EF0C0}
+ol.chain li:not(:last-child)::after{display:none}
+ol.chain b{font-weight:800;color:#0B3B24}ol.chain small{color:#3C5A4B}
+.facts.num div{background:#fff;border:1px solid var(--line);border-top:4px solid var(--g);border-radius:6px;padding:20px 18px 20px 62px;display:flex;align-items:center;min-height:76px}
+.facts.num b{font-size:17px;font-weight:800;margin:0}.facts.num .fn{top:50%;transform:translateY(-50%)}
+.note.warn{background:#FFF3F2;border:1px solid #F6CBC7;border-left:4px solid #E5534B}
+.warn-tag{display:inline-block;background:#E5534B;color:#fff;font-size:12.5px;border-radius:4px;padding:1px 8px;margin-right:10px;vertical-align:1px}
+h1,h2,h3,h4,b,strong{font-weight:800}.h2note{display:inline-block;margin-left:12px;font-size:13px;font-weight:700;color:var(--nvd);background:var(--nv);border-radius:8px;padding:3px 10px;vertical-align:middle}mark.hl-order{background:linear-gradient(transparent 45%,#B9F3D3 45%);color:#0B3B24;font-weight:800;padding:0 2px}section.opt-part>h2{white-space:nowrap}.h2chip{font-size:13px;font-weight:400;margin-left:14px;display:inline-block;vertical-align:middle;white-space:nowrap}@media(max-width:900px){section.opt-part>h2{white-space:normal}.h2chip{white-space:normal;margin:8px 0 0}}.tbl td,.tbl th{text-align:center;vertical-align:middle}.tbl td:has(ul.cond){text-align:left}.tbl td ul.cond{text-align:left;display:block}li:has(> b.warn-tag:first-child){list-style:none;margin-left:-18px}.ask-row{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.ask-chip b{font-weight:700;color:var(--ink);margin-right:4px}.pnum{display:inline-grid;place-items:center;min-width:20px;height:20px;padding:0 5px;margin:0 4px 0 2px;border-radius:999px;background:var(--gd);color:#fff;font-size:12px;font-weight:800;vertical-align:1px}.ord{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:#0B3B24;color:#fff;font-style:normal;font-size:11.5px;font-weight:800;margin-right:6px;vertical-align:1px}.lf-label.ex{background:#5B6470;color:#fff}.lf-cell.ex{border:0;background:#F3F4F6}section.opt-part{background:#F7F9FF;border:1.5px dashed #AFC2F5;border-radius:14px;padding:6px 20px 16px;margin-top:22px}.opt-tag{display:inline-block;font-size:12.5px;font-weight:800;background:var(--nvd);color:#fff;border-radius:6px;padding:2px 9px;margin-right:10px;vertical-align:4px}.nv-tag{display:inline-block;font-size:11.5px;font-weight:800;background:var(--nv);color:var(--nvd);border-radius:6px;padding:1px 7px;margin-left:6px;vertical-align:1px}.ipbox{display:grid;grid-template-columns:1fr 1.4fr;gap:12px;margin:14px 0}.ipbox>div{border-radius:12px;padding:14px 16px}.ipbox h5{margin:0 0 8px;font-size:15px}.ipbox h5 small{font-weight:400;color:var(--sub);margin-left:6px}.ip-ok{background:var(--gl);border:1.5px solid var(--gm)}.ip-ok ul{list-style:none;padding:0;margin:0}.ip-ok li{padding:4px 0}.ip-ok li::before{content:"✓";color:var(--gd);font-weight:800;margin-right:8px}.ip-ng{background:#FFF3F2;border:1.5px solid #F6CBC7}.ip-ng details{border:1px solid #F6CBC7;background:#fff;border-radius:8px;margin:6px 0}.ip-ng summary{cursor:pointer;padding:8px 12px;font-weight:700}.ip-ng summary::before{content:"✕ ";color:#D93025}.ip-ng details>figure{margin:0 10px 10px}a.go-btn{margin-left:auto;display:inline-flex;flex-direction:column;align-items:flex-start;background:var(--g);color:#fff!important;text-decoration:none;border-radius:10px;padding:8px 16px;font-weight:800;font-size:15px;line-height:1.3}a.go-btn small{font-weight:400;font-size:12px;opacity:.9}a.go-btn:hover{background:var(--gd)}.gal-t{margin:14px 0 8px;font-size:15px}.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}.gal figure.shot{margin:0}.gal figure.shot figcaption{text-align:center;font-weight:800;color:var(--ink);font-size:14px}.order-strip ol.chain li{background:#0B3B24}.order-strip ol.chain li:last-child{background:#03C75A}.order-strip ol.chain b{color:#fff;font-size:18px}.order-strip ol.chain small{color:#D6F7E6}.order-strip .ch-no{background:#fff;color:#0B3B24}.tabset>input{display:none}.tabbtns{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 0}.tabbtns label{display:flex;flex-direction:column;gap:4px;border:2px solid var(--gm);background:var(--gl);border-radius:12px;padding:16px 18px;cursor:pointer}.tabbtns label b{font-size:19px}.tabbtns label small{color:var(--sub)}.tabset>input:nth-of-type(1):checked~.tabbtns label:nth-child(1),.tabset>input:nth-of-type(2):checked~.tabbtns label:nth-child(2){background:var(--g);border-color:var(--g);color:#fff}.tabset>input:nth-of-type(1):checked~.tabbtns label:nth-child(1) small,.tabset>input:nth-of-type(2):checked~.tabbtns label:nth-child(2) small{color:#E6FFF0}.tabpanel{display:none;border:2px solid var(--g);border-radius:12px;padding:16px 18px;margin-top:12px}.tabset>input:nth-of-type(1):checked~.tabpanels>.tabpanel:nth-child(1),.tabset>input:nth-of-type(2):checked~.tabpanels>.tabpanel:nth-child(2){display:block}@media(max-width:900px){.ipbox,.tabbtns{grid-template-columns:1fr}.lf-cell.ex::before{content:attr(data-l);font-weight:800;color:var(--sub)}.lf-cell.ex{margin-top:6px}}.tracks{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:14px 0}.track{border:2px solid var(--gm);border-radius:12px;padding:16px 18px;background:#fff;min-width:0}.tr-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}.tr-head b{font-size:18px}ol.vsteps{list-style:none;padding:0;margin:0 0 12px;position:relative}ol.vsteps li{display:flex;gap:10px;align-items:flex-start;padding:7px 0;position:relative}ol.vsteps li:not(:last-child)::after{content:"";position:absolute;left:12px;top:34px;bottom:-6px;width:2px;background:var(--gm)}.vs-no{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--g);color:#fff;font-weight:800;font-size:13px;flex:none}.tr-meta{display:grid;gap:6px;background:var(--bg);border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}.tr-meta em{font-style:normal;font-weight:800;color:var(--gd);margin-right:8px}.todo{color:#D93025;font-weight:800}.todo-line{margin:4px 0 10px}.plain-desc{margin:6px 0}@media(max-width:900px){.tracks{grid-template-columns:1fr}}.hub span.nn{align-self:flex-start;justify-self:start}span.nn{white-space:nowrap;width:auto!important;min-width:22px;padding:0 6px;border-radius:999px!important;word-break:keep-all}.actor{display:inline-block;font-size:12px;font-weight:800;border-radius:6px;padding:1px 8px;margin-right:8px;vertical-align:2px}.actor.adv{background:var(--nv);color:var(--nvd)}.actor.pt{background:var(--gl);color:var(--gd)}.docgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0}.docgrid>div{border:2px solid var(--gm);border-radius:10px;padding:12px 14px;background:#fff}.docgrid b{display:block;font-size:16px;margin-bottom:4px}.docgrid span{font-size:13.5px;color:var(--sub)}ol.plain{padding-left:22px;margin:10px 0}ol.plain li{margin:4px 0}@media(max-width:900px){.docgrid{grid-template-columns:1fr}}.c-mgr{color:var(--gd);font-weight:800}.c-ad{color:var(--nvd);font-weight:800}dl.acct{margin:12px 0}dl.acct>div{display:flex;gap:14px;padding:10px 0;border-bottom:1px solid var(--line)}dl.acct dt{min-width:120px}dl.acct dd{margin:0}.tree .t-top{background:var(--g)}.tree .t-kids>div{border-color:#C9D6FA;background:var(--nv)}.tree .t-kids b{color:var(--nvd)}table.oxt td:not(:first-child),table.oxt th:not(:first-child){text-align:center}table.oxt th small{font-weight:400;color:var(--sub)}.ox{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;font-weight:800;font-size:13px}.ox.o{background:var(--gl);color:var(--gd)}.ox.x{background:#F3F4F6;color:#B5BCC4}.atype>input{display:none}.atree{border:1px solid var(--line);border-radius:12px;padding:18px;background:#fff}.at-root{margin:0 auto 14px;width:max-content;background:#0B3B24;color:#fff;font-weight:800;border-radius:8px;padding:8px 22px}.at-branches{display:grid;grid-template-columns:1fr 2fr;gap:12px}.at-br{display:flex;flex-direction:column;gap:8px}.at-mid{text-align:center;font-size:13.5px;font-weight:700;color:var(--sub);border-bottom:2px solid var(--line);padding-bottom:6px}.at-sub{display:grid;grid-template-columns:1fr 1fr;gap:12px;flex:1}.at-leaf{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:84px;border:2px solid var(--gm);background:var(--gl);border-radius:10px;cursor:pointer;transition:all .15s;text-align:center;padding:10px}.at-leaf:hover{border-color:var(--g)}.at-leaf small{color:var(--sub);font-size:12.5px}#t-ncc:checked~.atree .l-ncc,#t-gfa:checked~.atree .l-gfa,#t-nosp:checked~.atree .l-nosp{background:var(--g);border-color:var(--g);color:#fff}#t-ncc:checked~.atree .l-ncc small,#t-gfa:checked~.atree .l-gfa small,#t-nosp:checked~.atree .l-nosp small{color:#E6FFF0}.at-hint{font-size:13px;color:var(--sub);margin:6px 0 0;text-align:center}.tpanel{display:none;border:2px solid var(--g);border-radius:12px;padding:16px 18px;margin-top:12px;animation:tgt 0s}#t-ncc:checked~.tpanels .p-ncc,#t-gfa:checked~.tpanels .p-gfa,#t-nosp:checked~.tpanels .p-nosp{display:block}.tp-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}.tp-head b{font-size:18px}.tp-code{font-size:12px;font-weight:800;background:var(--gl);color:var(--gd);border-radius:999px;padding:2px 10px}.tp-head a{margin-left:auto;font-weight:700}dl.tp-rows{display:grid;grid-template-columns:1fr 1fr;gap:6px 18px;margin:0 0 12px}dl.tp-rows>div{display:flex;gap:10px;border-bottom:1px dashed var(--line);padding:5px 0}dl.tp-rows dt{min-width:72px;font-weight:700;color:var(--gd)}dl.tp-rows dd{margin:0}.chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 2px}.chips i{font-style:normal;font-size:13px;background:#fff;border:1px solid var(--gm);color:#0B3B24;border-radius:999px;padding:2px 10px}.levels li small{display:block;color:var(--sub);font-size:12.5px}@media(max-width:900px){.at-branches,.at-sub,dl.tp-rows{grid-template-columns:1fr}}figure.shot.narrow{max-width:400px;margin-left:auto;margin-right:auto}.warn-line{margin:8px 0 14px}section.part{scroll-margin-top:84px;border-radius:12px}section.part:target,section.part.is-target{outline:3px solid var(--gm);outline-offset:12px;animation:tgt 2.4s ease}section.step:target,section.step.is-target,dl.gloss>div:target,dl.gloss>div.is-target{animation:tgtbox 2.4s ease}@keyframes tgt{0%{outline-color:transparent}12%{outline-color:var(--g)}60%{outline-color:var(--g)}100%{outline-color:var(--gm)}}@keyframes tgtbox{0%{box-shadow:0 0 0 0 transparent}12%{box-shadow:0 0 0 4px var(--g)}60%{box-shadow:0 0 0 4px var(--g)}100%{box-shadow:0 0 0 3px var(--gm)}}.lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:2px;margin-right:14px;font-size:13px}.lang a{padding:3px 12px;border-radius:999px;text-decoration:none;color:var(--sub);font-weight:700}.lang a.on{background:var(--g);color:#fff}svg.lock{vertical-align:-1px;margin-right:4px}a.ch-link{display:flex;flex-direction:column;gap:2px;color:inherit;text-decoration:none}ol.chain li:has(a.ch-link):hover{background:var(--g)}ol.chain li:has(a.ch-link):hover b,ol.chain li:has(a.ch-link):hover small{color:#fff}h2[id^=c-]{scroll-margin-top:72px}a.term{color:inherit;text-decoration:underline dotted var(--g);text-underline-offset:3px;text-decoration-thickness:2px}a.term:hover{color:var(--gd)}ul.cond{margin:0;padding-left:18px}ul.cond li{margin:2px 0}.warn-tag.sm{font-size:11.5px;padding:0 6px;margin-right:6px}dl.gloss{margin:8px 0}dl.gloss>div{border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:0 0 10px;scroll-margin-top:72px}dl.gloss>div:target{border-color:var(--g);box-shadow:0 0 0 3px var(--gm)}dl.gloss dt{font-weight:800;font-size:16.5px}dl.gloss dt small{font-weight:400;color:var(--sub);margin-left:8px;font-size:13px}dl.gloss dd{margin:6px 0 0}
+@media(max-width:900px){
+.lf-step,.lf-col:nth-child(2) .lf-step,ol.chain li,ol.chain li:first-child{clip-path:none;border-radius:8px;padding:12px 16px}
+.lf-cell{border-radius:6px}
+}
+</style></head><body>
+<div class="top"><a class="logo" href="index_zh.html"><i>N</i>全球试点合作伙伴指南</a><span class="sp"></span><span class="lang"><a class="" href="charge.html">한국어</a><a class="on" href="charge_zh.html">中文</a></span><span class="ask">咨询 <a href="mailto:dl_adpartner_global@navercorp.com">dl_adpartner_global@navercorp.com</a></span></div>
+<div class="wrap"><nav class="side"><h5>指南目录</h5><ul><li><a href="program_zh.html"><span class="nn">1</span>试点计划介绍</a></li><li><a href="contract_zh.html"><span class="nn">2</span>合同</a></li><li><a href="register_zh.html"><span class="nn">3</span>合作伙伴注册</a></li><li><a href="learn_zh.html"><span class="nn">4-1</span>了解NAVER广告</a></li><li><a href="ops_zh.html"><span class="nn">4-2</span>广告运营流程</a></li><li class="on"><a href="charge_zh.html"><span class="nn">5</span>广告费充值</a><ol><li><a href="#b1">1. 广告费充值</a></li><li><a href="#b2">2. 广告投放</a></li></ol></li><li><a href="settle_zh.html"><span class="nn">6</span>结算</a></li><li><a href="glossary_zh.html"><span class="nn">Aa</span>术语表</a></li></ul></nav><main><article><div class="crumb"><a href="index_zh.html">全球试点合作伙伴指南</a> › <b>广告费充值</b></div><h1>广告费充值</h1><p class="lead">广告费需预先充值到广告主广告账户的 Bizmoney 中，广告每次展示或点击时扣除。</p>
+<div class="lf" style="--cols:2"><div class="lf-col lf-labels"><div></div><div class="lf-label">合作伙伴</div><div class="lf-label nv">NAVER</div></div><div class="lf-col"><a class="lf-step" href="#b1"><span class="lf-no">1</span><span class="lf-title">广告费充值</span><span class="lf-go">›</span></a><div class="lf-cell pt" data-l="合作伙伴 · ">广告主 <a class="term" href="glossary_zh.html#ad-account">广告账户</a>的 <a class="term" href="glossary_zh.html#bizmoney">Bizmoney</a> 充值（海外信用卡或外币汇款）</div><div class="lf-cell nv" data-l="NAVER · ">外币汇款时开具充值发票 · 确认入账</div></div><div class="lf-col"><a class="lf-step" href="#b2"><span class="lf-no">2</span><span class="lf-title">广告投放</span><span class="lf-go">›</span></a><div class="lf-cell pt" data-l="合作伙伴 · ">运营广告，随时确认Bizmoney余额</div><div class="lf-cell nv" data-l="NAVER · ">按广告展示费用扣除Bizmoney</div></div></div>
+<div class="ask-row"><span class="ask-chip"><em>咨询</em><b>信用卡充值</b> <a href="mailto:searchad.agreement@navercorp.com">searchad.agreement@navercorp.com</a></span><span class="ask-chip"><em>咨询</em><b>外币汇款 · 充值发票</b> 合作伙伴支持团队 <a href="mailto:agency_cs@navercorp.com">agency_cs@navercorp.com</a></span></div>
+<section class="part" id="b1"><h2>1. 广告费充值</h2>
+<p>广告费可选择海外信用卡支付或外币汇款（发票入账）其中一种方式充值。<br>点击下方方式可查看详细流程和截图。<br>无论哪种方式，请在该广告账户的 <a class="term" href="glossary_zh.html#agency-right">代理权</a>转移给合作伙伴后再充值。</p>
+<p class="warn-line"><b class="warn-tag sm">注意</b>增值税0%（零税率）仅在同时满足 <span class="pnum">1</span>海外广告主账户 <span class="pnum">2</span>不委托税务发票 <span class="pnum">3</span>以外币充值 三个条件时适用<br>以韩元充值将加收增值税且不予退还</p>
+<p class="plain-desc">充值发票与佣金发票的区别请见 <a href="glossary_zh.html#invoice-types">术语词典 › 发票类型</a> 参考</p>
+<div class="tabset"><input type="radio" name="charge" id="s-card" checked><input type="radio" name="charge" id="s-wire"><div class="tabbtns"><label for="s-card"><b>A. 海外信用卡支付</b><small>即时到账 · 在广告账户中直接支付</small></label><label for="s-wire"><b>B. 外币汇款（发票入账）</b><small>通常2周，最长4周 · 申请充值发票后汇款</small></label></div><div class="tabpanels"><div class="tabpanel"><ol class="vsteps"><li><span class="vs-no">1</span><div>点击广告主中心顶部Bizmoney旁的“充值”，或在广告账户 › 结算 › 广告币管理中点击“充值”</div></li><li><span class="vs-no">2</span><div>在支付方式中选择海外信用卡</div></li><li><span class="vs-no">3</span><div>使用已开通Visa · Master · JCB认证服务（Secure Service）的信用卡支付</div></li><li><span class="vs-no">4</span><div>支付后立即计入Bizmoney（余额以韩元显示）</div></li></ol><ul class="cond"><li>可使用合作伙伴名下的海外信用卡为广告主账户充值</li><li>没有一次性为多个账户付款的统一支付功能，需为每个广告账户分别登记信用卡后充值</li><li>银行卡充值部分的退款：付款日起未满6个月的，通过原付款卡取消退款（不可现金退款）</li><li>付款日起超过6个月则以现金方式退款</li><li>申请银行卡取消退款时，需取消的付款金额与 Bizmoney 余额一致</li></ul><div class="ask-row"><span class="ask-chip"><em>咨询</em><b>信用卡充值问题</b> <a href="mailto:searchad.agreement@navercorp.com">searchad.agreement@navercorp.com</a></span></div><figure class="shot"><a href="assets/S00.jpg" target="_blank" rel="noopener"><img src="assets/S00.jpg" alt="广告主中心顶部的Bizmoney · “充值”按钮" loading="lazy"></a><figcaption>广告主中心顶部的Bizmoney · “充值”按钮</figcaption></figure><figure class="shot"><a href="assets/S01.jpg" target="_blank" rel="noopener"><img src="assets/S01.jpg" alt="广告账户 › 结算 › 广告币管理" loading="lazy"></a><figcaption>广告账户 › 结算 › 广告币管理</figcaption></figure></div><div class="tabpanel"><ol class="vsteps"><li><span class="vs-no">1</span><div>向合作伙伴支持团队（agency_cs@navercorp.com）申请 <a class="term" href="glossary_zh.html#charge-invoice">充值发票</a> （提供广告账户ID · 金额 · 币种）</div></li><li><span class="vs-no">2</span><div>确认发票上的友利银行外币虚拟账户（每个广告账户的账户不同）</div></li><li><span class="vs-no">3</span><div>以与发票相同的币种 · 金额汇款，收款人名称为“NAVER(发票编号)”</div></li><li><span class="vs-no">4</span><div>确认入账后计入Bizmoney。<br>如有延迟，请在 <a href="https://nsf.navercorp.com/home" target="_blank" rel="noopener">NSF（服务广场）</a>申请入账确认</div></li></ol><div class="ask-row"><span class="ask-chip"><em>咨询</em><b>充值发票 · 入账确认</b> <a href="mailto:agency_cs@navercorp.com">agency_cs@navercorp.com</a></span><span class="ask-chip"><em>咨询</em><b>入账延迟</b> <a href="https://nsf.navercorp.com/home" target="_blank" rel="noopener">NSF（服务广场）</a> › 综合广告_合作伙伴支持 › 海外广告主</span><span class="ask-chip"><em>咨询</em><b>退款申请</b> <a href="https://nsf.navercorp.com/home" target="_blank" rel="noopener">NSF（服务广场）</a> › 综合广告_合作伙伴支持 › 海外广告主 › 退款申请</span></div><ul class="cond"><li><b class="warn-tag sm">注意</b>以发票上注明的币种（须为支持币种）汇入相同金额。<br>换成韩元（KRW）或其他币种汇款将无法充值</li><li>支持币种：USD、SGD、EUR、GBP、JPY、CNY、HKD、AUD、CAD</li><li>外币现金退款只能退至广告主本人名下的海外账户（不可退至第三方账户），扣除汇款手续费3万韩元</li><li>韩元现金退款也可退至合作伙伴等第三方的韩国国内账户</li><li>仅可退还全部付费余额，不可部分退款，建议按预计使用金额分次充值</li><li><a class="term" href="glossary_zh.html#charge-invoice">充值发票</a>（以外币汇款充值时向合作伙伴支持团队申请获取的汇款说明）在信用卡充值时不开具</li><li><b class="warn-tag sm">注意</b>与合作伙伴向NAVER提交的 <a class="term" href="glossary_zh.html#invoice">佣金发票</a>是不同的概念</li></ul><figure class="shot"><a href="assets/S02.jpg" target="_blank" rel="noopener"><img src="assets/S02.jpg" alt="结算 › 付款设置中的收款账户" loading="lazy"></a><figcaption>结算 › 付款设置中的收款账户</figcaption></figure><details class="more"><summary>充值发票申请邮件（英文）</summary><pre class="letter">To: agency_cs@navercorp.com (파트너사지원) / Cc: 담당 AM, dl_adpartner_global@navercorp.com
+Subject: [Agency] Request for foreign-currency charge invoice ([Ad account ID], [Currency] [Amount])
+
+We would like to request an invoice for a foreign-currency bizmoney top-up for the ad account below.
+(Agency authority for this account has been transferred to [Agency].)
+
+1. Ad account ID: [ID]
+2. Advertiser: [legal name]
+3. Amount to be remitted: [Currency] [Amount]
+4. Expected remittance date: [YYYY-MM-DD]
+5. Remitter: [Agency legal name] will remit the payment on behalf of the advertiser.
+
+Please send the invoice as a PDF. Thank you.</pre></details><details class="more"><summary>入账确认申请（NSF登记内容）</summary><pre class="letter">NSF &gt; 통합광고_파트너사지원 &gt; 해외광고주 &gt; 입금 확인 및 가상계좌 이체요청
+
+Title: [Agency] Deposit confirmation request ([Ad account ID], Invoice [No.])
+
+1. Ad account ID: [ID]
+2. Invoice number: [YYYYMMDD-NNNNNN]
+3. Remittance date: [YYYY-MM-DD]
+4. Amount and currency: [Currency] [Amount]
+5. Remitter: [Agency legal name] (on behalf of the advertiser)
+6. Beneficiary name used: NAVER([Invoice No.])
+
+Attachments: the invoice used (required), bank remittance advice</pre></details></div></div></div>
+</section><section class="part" id="b2"><h2>2. 广告投放</h2>
+<p>广告展示或被点击时，产生的广告费将从Bizmoney中扣除。</p>
+<p class="warn-line"><b class="warn-tag sm">注意</b>余额为0时广告将停止且审核也不会进行，请随时确认充值记录和余额。</p>
+<ul class="cond"><li>即使以外币充值，Bizmoney也会按入账时的汇率换算为韩元后扣除</li><li>充值 · 扣除 · 结算时点之间产生的汇兑损益不另行补偿（无优惠券等补偿）</li></ul>
+<h3 class="sub">查看充值 · 消耗记录</h3>
+<p class="plain-desc">在结算 › 广告币管理的“充值记录”和“消耗记录”标签中按期间查看使用明细</p>
+<figure class="shot"><a href="assets/S01b.jpg" target="_blank" rel="noopener"><img src="assets/S01b.jpg" alt="结算 › 广告币管理 › 充值记录" loading="lazy"></a><figcaption>结算 › 广告币管理 › 充值记录</figcaption></figure>
+<script>(function(){var h=location.hash.slice(1);var i=document.getElementById(h);if(i&&i.type==='radio'){i.checked=true;i.closest('.tabset').scrollIntoView();}})();</script></section></article><div class="pn"><a class="pv" href="ops_zh.html">‹ 广告运营流程</a><a class="nx" href="settle_zh.html">结算 ›</a></div></main></div>
+<footer>政策和条件可能发生变化，最终以负责AM的说明为准。</footer></body></html>
